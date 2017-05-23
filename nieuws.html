@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Nieuws | Master it Training - 650 IT trainingen en cursussen</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/datepicker3.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nieuws.css">
+    <script src="../bower_components/modernizr/modernizr.js">		</script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+    <script src="https://use.typekit.net/xkp0gco.js"></script>
+    <script type="text/javascript">try{Typekit.load({ async: true });}catch(e){}</script><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body class="nieuws">
+    <div class="navbar navbar-fixed-top sticky-header">
+      <div class="container">
+        <div class="row">
+          <div class="col--sticky-header">
+            <div class="sticky__logo"><a href="/"><img src="../img/Master-It-Logo-507x160px-WHITE-RED.png" alt="Master it Training"></a></div>
+            <nav class="sticky__nav">
+              <ul class="nav navbar-nav">
+                <li class="nav__home"><a href="/">Home</a></li>
+                <li class="nav__trainingen sticky__link"><a href="trainingen.html">Trainingen</a></li>
+                <li class="nav__certificeringen"><a href="certificeringen.html">Certificeringen</a></li>
+                <li class="nav__master-it"><a href="master-it.html">Master it</a></li>
+                <li class="nav__nieuws"><a href="nieuws.html">Nieuws</a></li>
+                <li class="nav__contact"><a href="contact.html">Contact																								</a></li>
+              </ul>
+            </nav>
+            <div class="sticky__icon"><a href="#" class="search"><i class="fa fa-search"></i></a></div>
+            <div class="sticky__icon"><a href="templates.html" class="cart"><i class="fa fa-shopping-cart"></i></a></div>
+            <div class="sticky__icon"><a href="templates.html" class="cart"><i class="fa fa-arrow-circle-o-up"></i></a></div>
+          </div>
+        </div>
+        <div class="row">									
+          <div class="col--sticky__crumbs">
+            <ol class="sticky__crumbs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sectie</a></li>
+              <li><a href="#">Onderwerp</a></li>
+              <li class="active">Huidige pagina lorem ipsum</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--mobile-header navbar-fixed-top">
+      <nav id="offCanvasMenu" role="navigation" class="navmenu navmenu-default navmenu-inverse navmenu-fixed-left offcanvas">
+        <ul class="nav navmenu-nav off__main">
+          <li class="nav__home"><a href="/">Home</a></li>
+          <li class="nav__trainingen"><a href="trainingen.html">Trainingen</a></li>
+          <li class="nav__certificeringen"><a href="certificeringen.html">Certificeringen</a></li>
+          <li class="nav__master-it"><a href="master-it.html">Master it</a></li>
+          <li class="nav__nieuws"><a href="nieuws.html">Nieuws</a></li>
+          <li class="nav__contact"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navmenu-nav off__contact">
+          <li class="telefoon"><a href="#">040 23 23 390</a></li>
+          <li class="chat"><a href="#">chatten</a></li>
+          <li class="email"><a href="mailto:info@masterit.nl">mailen</a></li>
+        </ul>
+        <ul class="nav navmenu-nav off__extra">
+          <li class="english"><a href="#">English</a></li>
+          <li class="login"><a href="login.html">Log in</a></li>
+          <li class="cart"><a href="cart.html">Winkelmand (0)</a></li>
+          <li class="zoek"><a href="#">Zoek</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col--mobile-menu-left">
+            <div class="mobile-menu__left">
+              <div class="row">
+                <div class="col--hamburger-icon"><a data-toggle="offcanvas" data-target="#offCanvasMenu" data-canvas="body" class="hamburger"><i class="fa fa-bars"></i></a></div>
+                <div class="col--phone-icon"><a href="tel:+31402323390" class="phone"><i class="fa fa-phone"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col--brand">
+            <div class="hd__branding">
+              <h1 class="site-name">Master it Training</h1>
+              <div class="site-logo"><a href="/"><img src="../img/Master-It-Logo-507x160px-WHITE-RED.png" alt="Master it Training" class="logo--white"></a></div>
+            </div>
+          </div>
+          <div class="col--mobile-menu-right">
+            <div class="mobile-menu__right">
+              <div class="row">
+                <div class="col--search-icon"><a href="#" data-toggle="collapse" data-target=".mobile-search-input" class="search"><i class="fa fa-search"></i></a></div>
+                <div class="col--cart-icon"><a href="templates.html" class="cart"><i class="fa fa-shopping-cart"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col--mobile-search-input">
+            <div class="mobile-search-input collapse">
+              <div class="input-group">
+                <input id="hd__search" type="text" placeholder="Zoek training, certificaat of informatie..." class="form-control"><span class="input-group-btn">
+                  <button type="button" class="btn btn-primary">Zoek									</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--header">
+      <div class="container">
+        <div class="row">
+          <div class="col--brand">
+            <div class="hd__branding">
+              <h1 class="site-name">Master it Training</h1>
+              <div class="site-logo"><a href="/"><img src="../img/Master-It-Logo-507x160px.png" alt="Master it Training" class="logo--blue"><img src="../img/Master-It-Logo-507x160px-WHITE-RED.png" alt="Master it Training" class="logo--white"></a></div>
+            </div>
+          </div>
+          <div class="col--search-contact">
+            <div class="hd__contact-details-and-search">
+              <div class="hd__contact-details">
+                <ul>
+                  <li class="details__telephone"><i class="fa fa-phone-square"></i><a href="tel:+31402323390">040 23 23 390</a></li>
+                  <li class="details__chat"><i class="fa fa-comment"></i><a href="#">chatten</a></li>
+                  <li class="details__email"><i class="fa fa-envelope"></i><a href="mailto:info@master-it.nl">mailen</a></li>
+                  <li class="details__opening-hours">ma-vr 9:00-19:00</li>
+                </ul>
+              </div>
+              <div class="hd__search">
+                <div class="input-group">
+                  <input id="hd__search" type="text" placeholder="Zoek training, certificaat of informatie..." class="form-control"><span class="input-group-btn">
+                    <button type="button" class="btn btn-primary">Zoek</button></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col--shopping-cart">
+            <div class="hd__language-and-login">
+              <ul>
+                <li class="english"><a href="#">English</a></li>
+                <li class="login"><a href="login.html">Log in</a></li>
+              </ul>
+            </div>
+            <div class="hd__shopping-cart"><i class="fa fa-shopping-cart"></i><a href="templates.html">Winkelwagen <span class="cart__byline">online inschrijven</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--nav">
+      <div class="container">
+        <div class="row">
+          <div class="col--main-nav">
+            <nav class="main-nav">
+              <ul class="nav navbar-nav">
+                <li class="nav__home"><a href="/">Home</a></li>
+                <li class="nav__trainingen"><a href="trainingen.html">Trainingen</a></li>
+                <li class="nav__certificeringen"><a href="certificeringen.html">Certificeringen</a></li>
+                <li class="nav__master-it"><a href="master-it.html">Master it</a></li>
+                <li class="nav__nieuws"><a href="nieuws.html">Nieuws</a></li>
+                <li class="nav__contact"><a href="contact.html">Contact	</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col--breadcrumbs">
+            <ol class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li class="active">Nieuws </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col--page-header">
+            <div class="page-header">
+              <h1>Nieuws</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--onderwerp-filter-en-nieuws-items">
+      <div class="container">
+        <div class="row">
+          <div class="col--onderwerp-filter-en-nieuws-items">
+            <div class="onderwerp-filter-en-nieuws-items">
+              <div class="row">
+                <div class="col--onderwerp-filter">
+                  <div class="onderwerp-filter--dropdown">
+                    <div class="custom-select">
+                      <select class="form-control">
+                        <option value="" selected>Kies onderwerp:</option>
+                        <option value="">Alle onderwerpen</option>
+                        <option value="">Certificeringen</option>
+                        <option value="">Cloud</option>
+                        <option value="">dotnetmag</option>
+                        <option value="">HTML5</option>
+                        <option value="">Hyper-V</option>
+                        <option value="">Microsoft CRM</option>
+                        <option value="">Office</option>
+                        <option value="">Security</option>
+                        <option value="">Sharepoint</option>
+                        <option value="">SQL Server</option>
+                        <option value="">System center</option>
+                        <option value="">Visual Studio .net</option>
+                        <option value="">Windows</option>
+                        <option value="">Windows Server</option>
+                        <option value="">Windows Store Apps</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="onderwerp-filter">																				
+                    <h2>Onderwerp</h2>
+                    <ul>
+                      <li><a href="#">
+                          Alle onderwerpen
+                          (99)</a></li>
+                      <li><a href="#">
+                          Certificeringen
+                          (9)</a></li>
+                      <li><a href="#">
+                          Cloud
+                          (9)</a></li>
+                      <li><a href="#">
+                          dotnetmag
+                          (9)</a></li>
+                      <li><a href="#">
+                          HTML5
+                          (9)</a></li>
+                      <li><a href="#">
+                          Hyper-V
+                          (9)</a></li>
+                      <li><a href="#">
+                          Microsoft CRM
+                          (9)</a></li>
+                      <li><a href="#">
+                          Office
+                          (9)</a></li>
+                      <li><a href="#">
+                          Security
+                          (9)</a></li>
+                      <li><a href="#">
+                          Sharepoint
+                          (9)</a></li>
+                      <li><a href="#">
+                          SQL Server
+                          (9)</a></li>
+                      <li><a href="#">
+                          System center
+                          (9)</a></li>
+                      <li><a href="#">
+                          Visual Studio .net
+                          (9)</a></li>
+                      <li><a href="#">
+                          Windows
+                          (9)</a></li>
+                      <li><a href="#">
+                          Windows Server
+                          (9)</a></li>
+                      <li><a href="#">
+                          Windows Store Apps
+                          (9)</a></li>
+                    </ul>
+                  </div>
+                  <div class="schrijver-filter">
+                    <h2>Filter op schrijver</h2>
+                    <ul>
+                      <li><a href="#">
+                          Alle schrijvers
+                          (12)</a></li>
+                      <li><a href="#">
+                          Master it Training
+                          (99)</a></li>
+                      <li><a href="#">
+                          Jos van Vegchel
+                          (9)</a></li>
+                      <li><a href="#">
+                          Christian Peeters
+                          (9)</a></li>
+                      <li><a href="#">
+                          Michiel van der Arend
+                          (9)</a></li>
+                      <li><a href="#">
+                          Edwin Bastings
+                          (9)</a></li>
+                    </ul>
+                    <p><a href="#">Bekijk onze trainers</a></p>
+                  </div>
+                </div>
+                <div class="col--nieuws-items">
+                  <div class="nieuws-items">
+                    <div class="row">
+                      <div class="col--nieuws-items-1">
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                          <h2 class="bnieuws__title">Canvas & Video</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                            <p>Op de Microsoft Techdays heb ik 3 sessies verzorgd rondom HTML5 gerelateerde onderwerpen. De video registratie van deze sessie is inmiddels beschikbaar. Ik kreeg veel positieve reacties op mijn uitleg over de krachtige combinatie tussen HTML Canvas en Video. In deze blog kun je daar meer over terug vinden.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                          <h2 class="bnieuws__title">HTML5 tijdens TechDays14</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                            <p>Woensdag 16 en donderdag 17 april heeft onze collega Christian Peeters op verzoek van Microsoft drie sessies verzorgd tijdens de TechDays in Den Haag.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                          <h2 class="bnieuws__title">Examentraining</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                            <p>Van 12 tot 15 mei werd de TechEd North America 2014 georganiseerd. Tijdens de TechEd zijn er altijd examen preparatie sessies. De sessies zijn nu beschikbaar op Channel 9. Dus neem een kijkje en maak je slagingskans hoger.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col--nieuws-items-2">										
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                          <h2 class="bnieuws__title">CRM 2013 mobiel</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                            <p>Wat ik in mijn klassen met enige regelmaat hoor is: “Jammer dat ik daar die zware laptop voor mee moet sjouwen, geen zin in hoor”. Gelukkig hoeft dat ook niet meer.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                          <h2 class="bnieuws__title">//Build/ Dag 2: Azure en .Net framework</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                            <p>De keynote van vandaag draaide vooral om Azure. En als je eerlijk bent, hebben ze ook flinke stappen daar gezet. Naast het Azure geweld was er vandaag ook flink wat aandacht voor .Net gerelateerde zaken en de Office365 / Sharepoint API’s. Hier volgt een samenvatting van de hoogte punten.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                          <h2 class="bnieuws__title">Gratis Office gebruiken? Het kan met Office Online.</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                            <p>Geen zin om een Office 365 abonnement aan te schaffen maar wel de behoefte om Office applicaties te gebruiken en met anderen samen aan documenten te werken? Het kan met Office Online.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col--nieuws-items-3">										
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                          <h2 class="bnieuws__title">Eigen Cloud of Cloud services huren?</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                            <p>Ja, het is zeer goed mogelijk dat men nu al werkt in de Cloud, maar waarom? De zogenaamde Cloud zorgt ervoor dat men zeer schaalbaar is in resources, high availability en een zo hoog mogelijke up-time om maar eens een paar zaken te noemen.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                          <h2 class="bnieuws__title">//Build/ Dag 1 : Universal Windows Apps en Cortana</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                            <p>De eerste dag van de Build conference zit er op. Zoals alle grote Microsoft conferenties begint het met een groot spektakel. Het grootste nieuws: Universal Windows Apps, Phone 8.1 met Cortana de personal assistent en Windows 8.1 Update, met… ja daar is ie dan… het start menu.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                          <h2 class="bnieuws__title">Help, CRM 2013 van Microsoft Dynamics ziet er anders uit dan normaal</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                            <p>Soms gebeuren er zaken buiten je krachtenveld om. Plotseling werk je met een ander omgeving in CRM 2013.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col--nieuws-items-4">
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                          <h2 class="bnieuws__title">Canvas & Video</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                            <p>Op de Microsoft Techdays heb ik 3 sessies verzorgd rondom HTML5 gerelateerde onderwerpen. De video registratie van deze sessie is inmiddels beschikbaar. Ik kreeg veel positieve reacties op mijn uitleg over de krachtige combinatie tussen HTML Canvas en Video. In deze blog kun je daar meer over terug vinden.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                          <h2 class="bnieuws__title">HTML5 tijdens TechDays14</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x330"></a></div>
+                            <p>Woensdag 16 en donderdag 17 april heeft onze collega Christian Peeters op verzoek van Microsoft drie sessies verzorgd tijdens de TechDays in Den Haag.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                        <div class="block--nieuws">
+                          <div class="bnieuws__thumb--large"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                          <h2 class="bnieuws__title">Examentraining</h2>
+                          <p class="bnieuws__meta"><span class="bnieuws__datum">23-04-2014</span><span class="bnieuws__read-count">123 keer gelezen</span></p>
+                          <div class="bnieuws__text">
+                            <div class="bnieuws__thumb--small"><a href="#"><img src="http://placehold.it/440x248"></a></div>
+                            <p>Van 12 tot 15 mei werd de TechEd North America 2014 georganiseerd. Tijdens de TechEd zijn er altijd examen preparatie sessies. De sessies zijn nu beschikbaar op Channel 9. Dus neem een kijkje en maak je slagingskans hoger.</p>
+                            <p><a href="#" class="more-link">Lees verder</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--nieuws-items-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col--nieuws-items-footer">
+            <div class="nieuws-items-footer">
+              <div class="row">
+                <div class="col--empty"></div>
+                <div class="col--nieuws-footer-button">
+                  <button type="submit">Meer nieuws</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--footer">
+      <div class="container">
+        <div class="row">
+          <div class="col--footer">
+            <div class="footer">
+              <div class="foot__links">
+                <div class="quick-links">
+                  <h3 class="ft__header">Snel regelen</h3>
+                  <ul>
+                    <li class="ft__header">Snel regelen</li>
+                    <li><a href="#">Examen plannen</a></li>
+                    <li><a href="#">Adres trainingslocatie</a></li>
+                    <li><a href="#">Certificeringsposter aanvragen</a></li>
+                    <li><a href="#">Software Assurance Vouchers inleveren</a></li>
+                    <li><a href="#">Last minutes bekijken</a></li>
+                  </ul>
+                </div>
+                <div class="follow">
+                  <h3 class="ft__header">Volg Master it</h3>
+                  <ul>
+                    <li class="ft__header">Volg Master it</li>
+                    <li class="follow__newsletter-input">
+                      <div class="input-group input-group-sm">
+                        <input type="text" placeholder="Je emailadres..." class="form-control"><span class="input-group-btn">
+                          <button type="button" class="btn btn-primary">Inschrijven</button></span>
+                      </div>
+                    </li>
+                    <li class="follow__facebook"><a href="#"><i class="fa fa-facebook-square"> </i><span class="social--link-text">Facebook</span></a></li>
+                    <li class="follow__twitter"><a href="#"><i class="fa fa-twitter-square"> </i><span class="social--link-text">Twitter</span></a></li>
+                    <li class="follow__linkedin"><a href="#"><i class="fa fa-linkedin-square"> </i><span class="social--link-text">LinkedIn</span></a></li>
+                    <li class="follow__google-plus"><a href="#"><i class="fa fa-google-plus-square"> </i><span class="social--link-text">Google+</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="foot__small-print">
+                <ul>
+                  <li class="ft__info"><span class="copyright">Copyright Master it Training 2014 </span><span class="divider">- </span><span class="microsoft-partner">Microsoft Gold Partner</span></li>
+                  <li class="ft__link--sm"><a href="#">Privacy</a></li>
+                  <li class="ft__link--sm"><a href="#">Voorwaarden</a></li>
+                  <li class="ft__link--sm"><a href="#">Sitemap</a></li>
+                  <li class="ft__link--sm"><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap3-typeahead.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js">		</script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/locales/bootstrap-datepicker.nl.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      $('.nav__nieuws').addClass('active');
+      $('.js-datepicker').datepicker({
+      format: "dd/mm/yyyy",
+      weekStart: 1,
+      language: "nl",
+      multidate: 5,
+      todayHighlight: true
+      });		
+    </script>
+  </body>
+</html>

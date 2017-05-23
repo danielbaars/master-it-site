@@ -1,0 +1,200 @@
+extends default
+block header
+	- var pageTitle = 'Trainingen | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'certificering-detail';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li
+					a(href='#') Home
+				li
+					a(href='#') Certificeringen
+				li.active Microsoft Windows Server 2008 certificering			
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1 Microsoft Windows Server 2008 certificering
+	+row('page-intro')
+		.col--page-intro
+			.page-intro
+				.row
+					.col--intro__text
+						.intro__text
+							p
+								| Windows Server 2008, de opvolger van Windows Server 2003, biedt vele verbeteringen op het gebied van o.a. beheer en flexibiliteit. Introductietekst waarin 
+								span.hide-on-mobile onder andere de certificeringspas aan bod komt. Ullescium, a audantum id eum quid esti cum id ut quatestoria commolut ex explibus, ni viditatate modit dolores tecatur adiate voloreria sime oditionseque sintiis tibusti sciatus audignihiti dest laborestrum la pro bersperumque volutatectur sapeles equatem...
+							p
+								a.read-more-link(href='#') Lees verder				
+					.col--in-page-nav
+						.in-page-nav--links
+							ul
+								li
+									a(href='#') Certificeringstraject
+								li
+									a(href='#') Over deze certificering
+								li
+									a(href='#') Voor wie is deze certificering
+								li
+									a(href='#') Veelgestelde vragen
+								li
+									a(href='#') Vervolgtrajecten
+	+row('pas-kiezen-en-inschrijven')
+		.col--pas-kiezen-en-inschrijven
+			.pas-kiezen-en-inschrijven
+				.row
+					.col--pas-kiezen
+						.pas-kiezen
+							form(role="form")
+								.radio
+									input#radio(type='radio', name='radio', value='radio')
+									label(for='radio') Basis 
+										span.bedrag (€&nbsp;3.950)
+									a(href='#') Meer informatie
+								p
+									| De CertificeringsPas Basis is met name geschikt als je trainingsdagen wilt combineren met thuisstudie.
+								.radio
+									input#radio(type='radio', name='radio', value='radio')
+									label(for='radio') Plus 
+										span.bedrag (€&nbsp;5.990)
+									a(href='#') Meer informatie
+								p
+									| Bij de CertificeringsPas Plus ontvang je per training het aantal trainingsdagen dat hier standaard voor staat.
+								.radio
+									input#radio(type='radio', name='radio', value='radio')
+									label(for='radio') Onbeperkt 
+										span.bedrag (€&nbsp;7.750)
+									a(href='#') Meer informatie
+								p
+									| Onze meest complete CertificeringsPas waarbij je onbeperkt kunt komen trainen voor je certificering.
+								.checkbox
+									input#checkbox2(type='checkbox', name='checkbox2', checked='checked')
+									label(for='checkbox2') Inclusief de 3 examens 
+										span.bedrag (+&nbsp;€&nbsp;480)
+					.col--certificering-info-en-links
+						.training-info-en-links
+							.training-info
+								ul
+									li.tr-info__code MS20415   
+									li.tr-info__duur 1 jaar   
+									li.tr-info__methode certificeringspas   
+								p.tr-info__small-print
+									| Prijs per deelnemer, inclusief studiemateriaal, certificaat, koffie/thee en een uitgebreide lunch, exclusief 21% BTW.
+								p.tr-info__actie 
+									span Schrijf je nu in en ontvang een iPad mini!
+							.training-links								
+								form(role="form")
+									.form-group.form__button
+										button(type='submit') Schrijf je in
+										.tr-info__share-link
+											a(href='#') Stuur certificering door
+	+row('springest-banner')
+		.col--springest-banner
+			include _springest-banner
+	+row('certificeringstraject')
+		.col--certificeringstraject
+			.certificeringstraject
+				.cert-traject__header
+					h2 Certificeringstraject	
+				.cert-traject__stap
+					.row
+						.col--stap__info
+							.stap__info
+								h3 Stap 1
+								p
+									| The Microsoft Certified Solutions Associate (MCSA) on Windows Server 2008 credentials are intended for information technology (IT) professionals who work in the complex computing environment of medium to large companies.
+						.col--stap__trainingen
+							.stap__trainingen
+								h4 Trainingen
+								ul
+									li 
+										span.product-code 6425 
+										| Configuring and Troubleshooting Windows Server 2008 Active Directory Domain Services
+									li
+										span.product-code 6426 
+										| Configuring and Troubleshooting Identity and Access Solutions with Windows Server 2008 Active Directory
+						.col--stap__examen
+							.stap__examen
+								h4 Examen
+								ul
+									li 
+										span.product-code Examen 70-640 
+										| Windows Server 2008 Active Directory, Configuring
+				.cert-traject__stap
+					.row
+						.col--stap__info
+							.stap__info
+								h3 Stap 2
+								p
+									| The Microsoft Certified Solutions Accociate (MCSA) on Windows Server 2008 credentials are intended for information technology (IT) professionals who work in the complex computing environment of medium to large companies.
+						.col--stap__trainingen
+							.stap__trainingen
+								h4 Trainingen
+								ul
+									li
+										span.product-code 6421 
+										| Configuring and Troubleshooting a Windows Server 2008 & 2008 R2 Network Infrastructure
+						.col--stap__examen
+							.stap__examen
+								h4 Examen
+								ul
+									li 
+										span.product-code Examen 70-642 
+										| Windows Server 2008   Network Infrastructure, Configuring
+				.cert-traject__doel
+					h3 Gecertificeerd als
+					h4 Microsoft Certified Solutions Associate (MCSA): Windows Server 2008			
+	+row('over-certificering')
+		.col--over-certificering
+			.over-certificering
+				.over-certificering__header
+					h2 Over Microsoft Windows Server 2008 certificering
+					.custom-select
+						select.form-control
+							option(value='') Omschrijving
+							option(value='') Voor wie
+							option(value='' selected) Veelgestelde vragen
+							option(value='') Reacties van cursisten
+					.tab-nav.tab-nav--toon
+						ul
+							li
+								a(href='#') Omschrijving
+							li
+								a(href='#') Voor wie
+							li.active
+								a(href='#') Veelgestelde vragen
+							li
+								a(href='#') Reacties van cursisten
+				.row
+					.col--over-certificering__body
+						.over-certificering__body.over-certificering__body--faq
+							h3: a.collapsed(data-toggle="collapse" data-target="#faq1") Nitaspelis es velectem am ium explabor alit?
+							p#faq1.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.
+							h3: a.collapsed(data-toggle="collapse" data-target="#faq2") Trumquo stemped itassim possin conemol uptatin?
+							p#faq2.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.
+							h3: a.collapsed(data-toggle="collapse" data-target="#faq3") Dant sequi dolorib usapidi totatur?
+							p#faq3.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.
+							h3: a.collapsed(data-toggle="collapse" data-target="#faq4") Cusapel eate erit id es sectem nesequae doluptae el ipsam?
+							p#faq4.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.
+							h3: a.collapsed(data-toggle="collapse" data-target="#faq5") Nitaspelis es velectem am ium explabor alit?
+							p#faq5.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.
+					.col--over-certificering__promo
+						.over-certificering__promo
+							.intro__usp--sidebar
+								img.ipad-mini(src="../img/apple_ipad_mini-631x355px.png")
+								h2 Schrijf je nu in en ontvang een iPad Mini!
+	+row('vervolgtrajecten')
+		.col--vervolgtrajecten
+			.vervolgtrajecten
+				.vervolg__header
+					h2 Vervolgtrajecten
+				.product-blocks
+					.block--certificering
+						h4.product-code MCITP
+						h3.product-titel Windows Server 2008 Server Administrator
+					.block--certificering
+						h4.product-code MCITP
+						h3.product-titel Windows Server 2008 Enterprise Administrator
+					.block--certificering
+						h4.product-code MCITP
+						h3.product-titel Windows Server 2008 R2, Virtualization

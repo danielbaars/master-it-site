@@ -1,0 +1,122 @@
+extends default
+block header
+	- var pageTitle = 'Trainingen | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'training-detail';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li: a(href='#') Home
+				li: a(href='#') Trainingen
+				li: a(href='#') Windows Server
+				li.active Fundamentals of a Windows Server 2012 Infrastructure				
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1 Fundamentals of a Windows Server 2012 Infrastructure
+	+row('page-intro')
+		.col--page-intro
+			.page-intro
+				.row
+					.col--intro__text
+						.intro__text
+							p Learn about the Fundamental building blocks that go into building a Windows Server infrastructure with Windows 
+								span.hide-on-mobile Server 2012. This five day training covers the basic skills and knowledge that are required in order to build a Windows Server Infrastructure. It covers networking architecture and topologies, security considerations and best practices as well as basic Windows Server administration skills and technologies such as Windows Server 2012 Installation, configuration, maintenan...
+							p: a.read-more-link(href='#') Lees verder				
+					.col--in-page-nav
+						.in-page-nav--links
+							ul
+								li: a(href='#') Over deze training
+								li: a(href='#') Voor wie is deze training
+								li: a(href='#') Onderdelen van deze training
+								li: a(href='#') Veelgestelde vragen
+								li: a(href='#') Voorkennis en vervolgtrainingen
+	+row('kalender-inschrijf-blok')
+		.col--kalender-inschrijf-blok
+			include _kalender-inschrijf-blok-v2
+	+row('springest-banner')
+		.col--springest-banner
+			include _springest-banner
+	+row('over-training')
+		.col--over-training
+			.over-training
+				.over-training__header
+					h2 Over Fundamentals of a Windows Server 2012 Infrastructure
+					.custom-select
+						select.form-control
+							option(value='') Omschrijving
+							option(value='') Voor wie
+							option(value='' selected) Onderdelen
+							option(value='') Veelgestelde vragen
+							option(value='') Reacties van cursisten
+					.tab-nav.tab-nav--toon
+						ul
+							li
+								a(href='#') Omschrijving
+							li
+								a(href='#') Voor wie
+							li.active
+								a(href='#') Onderdelen
+							li
+								a(href='#') Veelgestelde vragen
+							li
+								a(href='#') Reacties van cursisten
+				.row
+					.col--over-training__body
+						.over-training__body
+							h3 Module 1: Installing and Configuring Windows Server 2012
+							p This module explains how the Windows Server 2012 editions, installation options, optimal service and device configuration and general post-installation configuration all contribute to the functionality and effectiveness of your Windows Server.
+							h4 Lessons
+							ul.bullet-list
+								li Installing Windows Server.
+								li Configuring Services.
+								li Configuring Peripherals and Devices.
+							h3 Module 2: Implementing Storage in Windows Server
+							p This module will introduce you to different storage technologies, discuss how to implement the storage. Que in endia eaqui ut aute estis vera doles pa quo et rae volore. Aliquidipsunt premporeiur ab ium et eum aut estrum re velis ad quiati odi dis in nobit quatent, sitiossimus magnis essunt.
+					.col--over-training__promo
+						.over-training__promo
+							.intro__usp--sidebar
+								h2 Bij Master it Training leer je alleen wat je echt nodig hebt.
+								ul.usp-list
+									li Ervaren trainers met state-of-the-art kennis
+									li Kies zelf wanneer en waar je wilt trainen
+									li Geplande trainingen gaan altijd door
+							.intro__links--sidebar
+								ul
+									li: a(href="") Onze trainers
+									li: a(href="") Onze methode
+									li: a(href="") Erkenningen
+	+row('voorkennis-en-vervolgtrainingen')
+		.col--voorkennis-en-vervolgtrainingen
+			.voorkennis-en-vervolgtrainingen
+				.vervolg__header
+					h2 Voorkennis en vervolgtrainingen
+					.tab-nav.tab-nav--certificering
+						ul
+							li.active
+								a(href='#') Windows 8 Upgrade
+							li
+								a(href='#') Windows Server 2008
+							li
+								a(href='#') Windows Server 2012 Upgrade
+				.vervolg__body
+					.related-links
+						ul
+							li: a.read-more-link(href='#') Naar certificering Windows 8 Upgrade
+					h3 Maakt deel uit van certificeringen
+					ul
+						li Windows Server 2008
+						li Windows Server 2012 Upgrade
+					h3 Voorkennis
+					ul
+						li 
+							span.product-code MS10969 
+							| Active Directory Services with Windows Server 2012 R2
+					h3 Vervolgtrainingen
+					ul
+						li 
+							span.product-code PS30 
+							| Automating Windows Administration with Windows PowerShell 3.0		
+						li 
+							span.product-code MS20411 
+							| Administering Windows Server 2012 R2

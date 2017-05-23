@@ -1,0 +1,88 @@
+extends default
+block header
+	- var pageTitle = 'Bevestiging | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'bevestiging';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li
+					a(href='#') Home
+				li.active Bevestiging
+	.outer--page-header
+		.container
+			.row
+				.col--page-header
+					.page-header
+						h1 Hartelijk dank voor uw inschrijving
+						h2 voor de training 
+							span Fundamentals of a Windows Server 2012 Infrastructure
+				.col--intro__text
+					.intro__text
+						p Dank u wel voor het inschrijven voor deze training! U zult geen spijt krijgen van uw keuze voor Master it Training. U ontvangt een training op maat en mag uitstekende service van ons verwachten.
+						p Binnen 2 werkdagen nemen we contact met u op om uw training met u te bespreken. U kunt uw eigen wensen voor datum en plaats doorgeven en we beantwoorden al uw vragen.
+						p.intro__afsluiting Onze Jessica en Vivian zullen onder andere de volgende vragen stellen. Als u ze alvast wilt beantwoorden maakt u ons blij!
+				.col--intro__foto
+					.intro__foto
+						img(src="img/BB_140616MASTER-4695v3-1200x674px.jpg")
+	+row('aanvullende-vragen')
+		.col--aanvullende-vragen
+			.aanvullende-vragen
+				.aanvullende-vragen__header
+					h2 Aanvullende vragen
+				.row
+					.col--aanvullende-vragen__body
+						.aanvullende-vragen__body
+							form.form-horizontal(role="form")
+								.aanvullend__wensen
+									.form__part-header						
+										h3 Uw wensen voor deze training
+										p Graag horen we uw wensen voor deze training. We bieden u de volgende keuzes.
+									.form-group.aanvullend__taal-software
+										label.col--form__left.control-label Taal software
+										.col--form__right
+											label.radio-inline
+												input(type='radio', name='TaalSoftware', value='nederlands')								
+												| Nederlands
+											label.radio-inline
+												input(type='radio', name='TaalSoftware', value='engels')								
+												| Engels
+									.form-group.aanvullend__taal-studiemateriaal
+										label.col--form__left.control-label Taal studiemateriaal
+										.col--form__right
+											label.radio-inline
+												input(type='radio', name='TaalStudiemateriaal', value='nederlands')								
+												| Nederlands
+											label.radio-inline
+												input(type='radio', name='TaalStudiemateriaal', value='engels')								
+												| Engels
+									.form-group
+										label.col--form__left.control-label iPad mini actie
+										.col--form__right
+											.custom-select
+												select.form-control
+													option(value='ipad-mini-retina-zwart') iPad Mini retina - zwart
+													option(value='ipad-mini-retina-wit') iPad Mini retina - wit
+									.form-group
+										label.col--form__left.control-label Q-Park parkeerkaart
+										.col--form__right
+											.custom-select
+												select.form-control
+													option(value='geen') Geen Q-Park parkeerkaart
+													option(value='wel') Wel Q-Park parkeerkaart	
+								.aanvullend__wachtwoord																																													
+									.form__part-header
+										h3 Wachtwoord voor uw Master it Training account
+										p Kies uw eigen wachtwoord en u krijgt toegang tot uw persoonlijke Master it Training account. Hiermee kunt u eenvoudig uw trainingshistorie inzien.
+									.form-group
+										label.col--form__left.control-label Wachtwoord
+										.col--form__right
+											input.form-control(type='text', name='Wachtwoord', placeholder='Wachtwoord...')
+									.form-group
+										label.col--form__left.control-label Herhaal wachtwoord
+										.col--form__right
+											input.form-control(type='text', name='Herhaal wachtwoord', placeholder='Herhaal wachtwoord...')		
+									.form-group.form__button
+										.col--form__right--offset
+											button(type='submit') Verstuur
+											

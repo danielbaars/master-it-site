@@ -1,0 +1,250 @@
+extends default
+block header
+	- var pageTitle = 'Nieuws | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'nieuws';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li
+					a(href='#') Home
+				li.active Nieuws 
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1 Nieuws
+	+row('onderwerp-filter-en-nieuws-items')
+		.col--onderwerp-filter-en-nieuws-items
+			.onderwerp-filter-en-nieuws-items
+				.row
+					.col--onderwerp-filter
+						.onderwerp-filter--dropdown
+							.custom-select
+								select.form-control
+									option(value='' selected) Kies onderwerp:
+									option(value='') Alle onderwerpen
+									option(value='') Certificeringen
+									option(value='') Cloud
+									option(value='') dotnetmag
+									option(value='') HTML5
+									option(value='') Hyper-V
+									option(value='') Microsoft CRM
+									option(value='') Office
+									option(value='') Security
+									option(value='') Sharepoint
+									option(value='') SQL Server
+									option(value='') System center
+									option(value='') Visual Studio .net
+									option(value='') Windows
+									option(value='') Windows Server
+									option(value='') Windows Store Apps
+						.onderwerp-filter																				
+							h2 Onderwerp
+							ul
+								li: a(href='#') Alle onderwerpen
+									| (99)
+								li: a(href='#') Certificeringen
+									| (9)
+								li: a(href='#') Cloud
+									| (9)
+								li: a(href='#') dotnetmag
+									| (9)
+								li: a(href='#') HTML5
+									| (9)
+								li: a(href='#') Hyper-V
+									| (9)
+								li: a(href='#') Microsoft CRM
+									| (9)
+								li: a(href='#') Office
+									| (9)
+								li: a(href='#') Security
+									| (9)
+								li: a(href='#') Sharepoint
+									| (9)
+								li: a(href='#') SQL Server
+									| (9)
+								li: a(href='#') System center
+									| (9)
+								li: a(href='#') Visual Studio .net
+									| (9)
+								li: a(href='#') Windows
+									| (9)
+								li: a(href='#') Windows Server
+									| (9)
+								li: a(href='#') Windows Store Apps
+									| (9)
+						.schrijver-filter
+							h2 Filter op schrijver
+							ul
+								li: a(href='#') Alle schrijvers
+									| (12)
+								li: a(href='#') Master it Training
+									| (99)
+								li: a(href='#') Jos van Vegchel
+									| (9)
+								li: a(href='#') Christian Peeters
+									| (9)
+								li: a(href='#') Michiel van der Arend
+									| (9)
+								li: a(href='#') Edwin Bastings
+									| (9)
+							p
+								a(href='#') Bekijk onze trainers
+					.col--nieuws-items
+						.nieuws-items
+							.row
+								.col--nieuws-items-1
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x330')
+										h2.bnieuws__title Canvas & Video
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x330')
+											p Op de Microsoft Techdays heb ik 3 sessies verzorgd rondom HTML5 gerelateerde onderwerpen. De video registratie van deze sessie is inmiddels beschikbaar. Ik kreeg veel positieve reacties op mijn uitleg over de krachtige combinatie tussen HTML Canvas en Video. In deze blog kun je daar meer over terug vinden.
+											p: a.more-link(href='#') Lees verder
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x248')
+										h2.bnieuws__title HTML5 tijdens TechDays14
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x248')
+											p Woensdag 16 en donderdag 17 april heeft onze collega Christian Peeters op verzoek van Microsoft drie sessies verzorgd tijdens de TechDays in Den Haag.
+											p: a.more-link(href='#') Lees verder
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x330')
+										h2.bnieuws__title Examentraining
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x248')
+											p Van 12 tot 15 mei werd de TechEd North America 2014 georganiseerd. Tijdens de TechEd zijn er altijd examen preparatie sessies. De sessies zijn nu beschikbaar op Channel 9. Dus neem een kijkje en maak je slagingskans hoger.
+											p: a.more-link(href='#') Lees verder
+								.col--nieuws-items-2										
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x330')
+										h2.bnieuws__title CRM 2013 mobiel
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x330')
+											p Wat ik in mijn klassen met enige regelmaat hoor is: “Jammer dat ik daar die zware laptop voor mee moet sjouwen, geen zin in hoor”. Gelukkig hoeft dat ook niet meer.
+											p: a.more-link(href='#') Lees verder
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x248')
+										h2.bnieuws__title //Build/ Dag 2: Azure en .Net framework
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x248')
+											p De keynote van vandaag draaide vooral om Azure. En als je eerlijk bent, hebben ze ook flinke stappen daar gezet. Naast het Azure geweld was er vandaag ook flink wat aandacht voor .Net gerelateerde zaken en de Office365 / Sharepoint API’s. Hier volgt een samenvatting van de hoogte punten.
+											p: a.more-link(href='#') Lees verder
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x330')
+										h2.bnieuws__title Gratis Office gebruiken? Het kan met Office Online.
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x330')
+											p Geen zin om een Office 365 abonnement aan te schaffen maar wel de behoefte om Office applicaties te gebruiken en met anderen samen aan documenten te werken? Het kan met Office Online.
+											p: a.more-link(href='#') Lees verder
+								.col--nieuws-items-3										
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x330')
+										h2.bnieuws__title Eigen Cloud of Cloud services huren?
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x248')
+											p Ja, het is zeer goed mogelijk dat men nu al werkt in de Cloud, maar waarom? De zogenaamde Cloud zorgt ervoor dat men zeer schaalbaar is in resources, high availability en een zo hoog mogelijke up-time om maar eens een paar zaken te noemen.
+											p: a.more-link(href='#') Lees verder
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x248')
+										h2.bnieuws__title //Build/ Dag 1 : Universal Windows Apps en Cortana
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x248')
+											p De eerste dag van de Build conference zit er op. Zoals alle grote Microsoft conferenties begint het met een groot spektakel. Het grootste nieuws: Universal Windows Apps, Phone 8.1 met Cortana de personal assistent en Windows 8.1 Update, met… ja daar is ie dan… het start menu.
+											p: a.more-link(href='#') Lees verder
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x330')
+										h2.bnieuws__title Help, CRM 2013 van Microsoft Dynamics ziet er anders uit dan normaal
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x330')
+											p Soms gebeuren er zaken buiten je krachtenveld om. Plotseling werk je met een ander omgeving in CRM 2013.
+											p: a.more-link(href='#') Lees verder
+								.col--nieuws-items-4
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x248')
+										h2.bnieuws__title Canvas & Video
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x330')
+											p Op de Microsoft Techdays heb ik 3 sessies verzorgd rondom HTML5 gerelateerde onderwerpen. De video registratie van deze sessie is inmiddels beschikbaar. Ik kreeg veel positieve reacties op mijn uitleg over de krachtige combinatie tussen HTML Canvas en Video. In deze blog kun je daar meer over terug vinden.
+											p: a.more-link(href='#') Lees verder
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x330')
+										h2.bnieuws__title HTML5 tijdens TechDays14
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x330')
+											p Woensdag 16 en donderdag 17 april heeft onze collega Christian Peeters op verzoek van Microsoft drie sessies verzorgd tijdens de TechDays in Den Haag.
+											p: a.more-link(href='#') Lees verder
+									.block--nieuws
+										.bnieuws__thumb--large
+											a(href='#'): img(src='http://placehold.it/440x248')
+										h2.bnieuws__title Examentraining
+										p.bnieuws__meta
+											span.bnieuws__datum 23-04-2014
+											span.bnieuws__read-count 123 keer gelezen
+										.bnieuws__text
+											.bnieuws__thumb--small
+												a(href='#'): img(src='http://placehold.it/440x248')
+											p Van 12 tot 15 mei werd de TechEd North America 2014 georganiseerd. Tijdens de TechEd zijn er altijd examen preparatie sessies. De sessies zijn nu beschikbaar op Channel 9. Dus neem een kijkje en maak je slagingskans hoger.
+											p: a.more-link(href='#') Lees verder
+	+row('nieuws-items-footer')
+		.col--nieuws-items-footer
+			.nieuws-items-footer
+				.row
+					.col--empty
+					.col--nieuws-footer-button
+						button(type='submit') Meer nieuws

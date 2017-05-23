@@ -1,0 +1,323 @@
+/* !HEADER kleuren */
+
+.outer--mobile-header {
+	background-color: $brand-primary;
+}
+
+.outer--header {
+	display: none;
+	@media #{$tablet} {
+		display: block;
+		background-color: white;
+	}	
+}
+
+.logo--white {
+	@media #{$tablet} {
+		display: none;
+	}	
+}
+
+.logo--blue {
+	display: none;
+	@media #{$tablet} {
+		display: block;
+	}
+}
+
+.hd__contact-details {
+	color: lighten(black, 25%);
+	ul {
+		> li {
+			&:hover {
+				color: $gray-dark;
+			}		
+		}
+	}
+	.fa {
+		color: $brand-primary;
+	}
+}
+
+.details__opening-hours {
+	color: $text-color;
+}
+
+.hd__language-and-login {
+	color: $medium-dark-color;
+	a:hover {
+		color: $dark-hover-color;
+	}
+}
+
+.hd__shopping-cart {
+	color: $brand-primary;
+	&:hover {
+		color: $gray-dark;
+	}
+}
+
+.cart__byline {
+	color: $text-color;
+}
+
+
+/* !HEADER */
+
+body {
+	padding-top: 67px;
+	@media #{$tablet} {
+		padding-top: 0;
+	}
+}
+
+.outer--mobile-header {
+	padding-top: 18px;
+	padding-bottom: 11px;
+	@media #{$tablet} {
+		display: none;
+	}
+}
+
+.outer--header {
+	@media #{$tablet} {
+		padding-top: 18px;
+		padding-bottom: 18px;
+	}
+}
+
+.mobile-menu__left,
+.mobile-menu__right {
+	padding-top: 3px;
+	li {
+		display: inline-block;
+	}
+	.fa {
+		font-size: 26px;
+		color: white;
+		@media #{$tablet} {
+			font-size: $font-size-xxxlarge;
+		}
+	}
+}
+
+.mobmenu__menu,
+.mobmenu__search {
+	padding-right: $padding-base;
+}
+
+.hd__branding {
+	text-align: center;
+	@media #{$tablet} {
+		padding-top: 6px;
+	}
+}
+
+.site-name {
+	display: none;
+}
+
+
+@include site-logo(32px);
+
+@media #{$tablet} {
+	@include site-logo(57px);
+}
+
+.site-logo {
+	display: inline-block;
+	@media #{$tablet} {
+		display: block;
+	}
+}
+
+.hd__contact-details,
+.hd__language-and-login,
+.hd__shopping-cart {
+	&, input, button {
+		font-size: $font-size-small;
+	}
+}
+
+
+.hd__contact-details {
+	padding-bottom: 12px;
+	ul {
+		@extend %list-inline;
+		margin-left: 0;
+		> li {
+			position: relative;
+			padding-right: 12px;
+			&.details__telephone {
+				padding-left: 26px;
+				.fa {
+					font-size: 24px;
+				}
+			}
+			&.details__chat {
+				padding-left: 26px;
+				.fa {
+					font-size: 22px;
+				}
+			}
+			&.details__email {
+				padding-left: 25px;
+				.fa {
+					font-size: 20px;
+					top: -1px;
+				}
+			}
+			&.details__opening-hours {
+				padding-right: 0;
+				display: none;
+				@media #{$desktop} {
+					display: inline-block;
+				}
+			}	
+		}
+	}
+	a {
+		font-weight: bold;
+	}
+	.fa {
+		position: absolute;
+		top: -2px;
+		left: 0;
+	}
+}
+
+
+/* ! HEADER SEARCH */
+
+.col--hd__search {
+	width: 100%;
+}
+
+.hd__search {
+	.btn {
+		font-weight: $bold;
+	}
+}
+
+.details__opening-hours {
+	display: none;
+	@media #{$desktop} {
+		display: block;
+	}
+}
+
+/* ! HEADER LANGUAGE SWITCH & LOG IN */
+
+
+.hd__language-and-login {
+	float: right;
+	padding-bottom: 15px;
+	ul {
+		@extend %list-inline;
+	}
+	li {
+		&:after {
+			content: '|';
+			margin-left: 10px;
+		}
+		&:last-child {
+			padding-right: 0;
+			&:after {
+				content: none;
+			}
+		}
+	}
+	@media #{$tablet} {
+		font-size: $font-size-xsmall;
+	}
+	@media #{$desktop} {
+		font-size: $font-size-small;
+	}	
+}
+
+/* ! HEADER SHOPPING CART */
+
+.hd__shopping-cart {
+	clear: both;
+	font-weight: bold;
+	float: right;
+	position: relative;
+	.fa {
+		position: absolute;
+		top: 2px;
+		left: -19px;
+		margin-right: 5px;
+	}
+}
+
+.cart__byline {
+	display: block;
+	font-size: 0.8em;
+	font-weight: normal;
+	margin-top: -2px;
+}
+
+/* ! NAVIGATION */
+
+.outer--nav {
+	background-color: $master-it-blue;
+}
+
+.main-nav {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	.navbar-nav > li > a {
+		padding-top: 8px;
+		padding-bottom: 6px;
+	}
+	@media #{$desktop} {
+		font-size: 17px;
+	}
+}
+
+.main-nav {
+	ul>li>a {
+		color: white;
+		&:hover {
+			color: white;
+			background-color: $master-it-red; 
+		}
+	}
+	ul>li.active>a {
+		background-color: lighten($brand-primary, 7%);
+	}
+}
+
+/* ! OFF CANVAS MENU */
+
+.off__main {
+	li {
+		font-weight: $bold;
+		text-transform: uppercase;
+	}
+}
+
+.off__contact {
+	$border: 1px solid lighten(#222, 10%);
+	border-top: $border;
+	border-bottom: $border;
+	@include vertical-padding(16px);
+	a {
+		font-weight: $bold;
+		&:before {
+			@include font-awesome;
+			margin-right: 6px;
+		}
+	}
+	.telefoon a:before {
+		content: '\f098';
+	}
+	.chat a:before {
+		content: '\f075';
+	}
+	.email a:before {
+		content: '\f199';
+	}
+}

@@ -1,0 +1,78 @@
+/* ! COLORS */
+
+$blue-cerulean: #0067A6; // 33% from http://0to255.com/0067A6
+$red-crimson: #ED1C24;
+$master-it-blue: $blue-cerulean;
+$master-it-red: $red-crimson;
+$brand-primary: $master-it-blue;
+
+$orange-dark: #FF8C00; // Complement color (monochromatic)
+$green-pigment: #00B659; // Secondary color (adjacent)
+
+/* ! COLOR TINTS */
+
+$blue-cerulean-01: #fcfdfe;
+$blue-cerulean-02: #f9fbfd;
+$blue-cerulean-03: #f7fafc;
+$blue-cerulean-04: #f4f8fb;
+$blue-cerulean-05: #f2f7fa;
+$blue-cerulean-06: #eff5f9;
+$blue-cerulean-07: #edf4f8;
+$blue-cerulean-08: #eaf2f7;
+$blue-cerulean-09: #e8f1f6;
+$blue-cerulean-10: #e5eff6;
+
+$orange-dark-01: #fffdfc;
+$orange-dark-02: #fffcf9;
+$orange-dark-03: #fffbf7;
+$orange-dark-04: #fffaf4;
+$orange-dark-05: #fff9f2;
+$orange-dark-06: #fff8ef;
+$orange-dark-07: #fff6ed;
+$orange-dark-08: #fff5ea;
+$orange-dark-09: #fff4e8;
+$orange-dark-10: #fff3e5;
+
+$green-pigment-01: #fcfefd;
+$green-pigment-02: #f9fdfb;
+$green-pigment-03: #f7fcfa;
+$green-pigment-04: #f4fcf8;
+$green-pigment-05: #f2fbf6;
+$green-pigment-06: #effaf5;
+$green-pigment-07: #edf9f3;
+$green-pigment-08: #eaf9f1;
+$green-pigment-09: #e8f8f0;
+$green-pigment-10: #e5f7ee;
+
+$brand79: #95d7ff;
+$brand83: #a6ddff;
+$brand86: #b7e4ff;
+$brand89: #c8eaff;
+$brand96: #eaf7ff;
+
+$pms-warm-grey-7: #a39487;
+
+/* Mono w/ complement Greyish lightest paletton.com */
+
+$color-primary-0: #D2D7D9;	/* Main Primary color */
+$color-primary-1: #869EAC;
+$color-primary-2: #A6B8C2;
+$color-primary-3: #9BA3A7;
+$color-primary-4: #878F94;
+
+$color-complement-0: #FFFBF6;	/* Main Complement color */
+$color-complement-1: #FFE4C4;
+$color-complement-2: #FFEED9;
+$color-complement-3: #FFF7EC;
+$color-complement-4: #E9DFD3;
+
+$light-text-color: white;
+$medium-dark-color: $master-it-blue;
+$medium-light-text-color: lighten($master-it-blue, 20%);
+$dark-hover-color: $gray-dark;
+
+$subdued-text-color: #ccc;
+
+$button-color: $green-pigment;
+$button-hover-color: $brand-primary;
+$input-bg-color: lighten(black, 94%);

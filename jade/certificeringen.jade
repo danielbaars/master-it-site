@@ -1,0 +1,199 @@
+extends default
+block header
+	- var pageTitle = 'Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'certificeringen';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li: a(href="") Home
+				li: a.active(href="") Certificeringen
+			ul.in-page-nav
+				li: a(href="") Microsoft
+				li: a(href="") Citrix
+				li: a(href="") Cisco
+				li: a(href="") CompTIA
+				li: a(href="") Linux
+				li: a(href="") VMWare
+	.outer--mobile-header-image
+		.mobile-header-image
+			img(src="../img/BB_140616MASTER-4594W-1600x444px.jpg")				
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1 Certificeringen
+	+row('page-intro')
+		.col--page-intro
+			.page-intro
+				.row
+					.col--intro__text
+						.intro__text
+							p Hier komt de introductietekst met SEO-optimized termen voor deze pagina. Conseratur autempe libus. Biscid utem fuga. Ilitiis 
+								span.hide-on-mobile eaquidio corum il ium quo molor maioratquis as pa non nonseque. Em ipsunt fugitiust vid eario. Hendige niminct inveles nus iligendiatis vollorem soloritatiam aut ma non pa nossum atio. Imolori onsendunt ut aut eatempo reressi magnient magni cum nim idel ipit ute seditas aspe volendae poritatem corum volorum endaes dit venimi.
+					.col--intro__usp
+						.intro__usp
+							h2 Haal je certificaat met de Master it Certificeringspas
+							ul
+								li Eén voordelige pas voor alle trainingen en examens
+								li Kies zelf wanneer en waar je wilt trainen
+								li Binnen een jaar ben je gecertificeerd!
+						.intro__links
+							ul
+								li: a(href="") Onze trainers
+								li: a(href="") Onze methode
+								li: a(href="") Erkenningen
+								li: a(href="") Referenties						
+					.col--intro__links
+						.intro__links
+							ul
+								li: a(href="") Onze trainers
+								li: a(href="") Onze methode
+								li: a(href="") Erkenningen
+								li: a(href="") Referenties
+					.col--intro__in-page-nav
+						.in-page-nav--links.in-page-nav--mobile
+							ul
+								li: a(href="") Microsoft
+								li: a(href="") Citrix
+								li: a(href="") Cisco
+								li: a(href="") CompTIA
+								li: a(href="") Linux
+								li: a(href="") VMWare			
+	+row('certificeringen-categorie')
+		.col--cert-cat__info
+			.cert-cat__info
+				h2 Microsoft certificeringen
+				.cert-cat__info__logo
+					a.logo--microsoft(href="#") 
+						img(src="../img/Microsoft-Partner-Gold-Learning-1627x295px.png" alt="Microsoft Partner Gold Learning")
+				.cert-cat__info__text						
+					p Microsoft biedt IT Professionals de mogelijkheid om zich door middel van het behalen van één of meerdere examens te certificeren als Microsoft Certified Professional 
+								span.hide-on-mobile (MCP). De te volgen Microsoft trainingen zijn zodanig op elkaar afgestemd, dat de benodigde tijd voor studie en examen uitstekend op elkaar aansluit. De trainingen t.b.v. een certificering kunnen klassikaal, individueel of binnen de 
+								span.narrow-column-shorten Open Master Class plaatsvinden. Voor een optimale voorbereiding kunnen er gedurende de trainingen speciale examentrainingen worden ingeroosterd waarin de leerstof beknopt wordt herhaald u diverse examenvragen kunt oefenen.
+				.cert-cat__info__links
+					ul
+						li: a.more-link(href="") Meer informatie
+						li: a.more-link(href="") Vraag onze certificeringsposter aan
+		.col--cert-cat__products
+			.cert-cat__products
+				.custom-select
+					select.form-control
+						option(value='') Alles
+						option(value='' selected) MCSA
+						option(value='') MCSE
+						option(value='') MCPD
+						option(value='') MCSD
+						option(value='') MCTS									
+				.tab-nav.tab-nav--toon
+					ul
+						li: a(href="#") Alles
+						li.active: a(href="#") MCSA
+						li: a(href="#") MCSE
+						li: a(href="#") MCPD
+						li: a(href="#") MCSD
+						li: a(href="#") MCTS			
+				.product-blocks
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows 7
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Implementing and Maintaining Audio/Visual Conferencing and Web Conferencing Using Microsoft Office Communications Server 2007
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows 8 upgrade
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows Server 2008
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows Server 2012
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows Server 2012 Upgrade
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel SQL Server 2008
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel SQL Server 2012
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel SQL Server 2012 Upgrade
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows 7 Enterprise Desktop Administrator						
+	+row('certificeringen-categorie')
+		.col--cert-cat__info
+			.cert-cat__info
+				h2 Citrix certificeringen
+				.cert-cat__info__logo
+					a.logo--citrix(href="#")
+						img(src="../img/Citrix-Partner-345x133px.png" alt="Citrix Partner")
+				.cert-cat__info__text
+					p Cisco Career Certifications zijn persoonsgebonden statussen (titels) die u kunt behalen via verschillende trainingsprogramma’s. De programma’s 
+								span.hide-on-mobile zijn zo ontwikkeld dat in diverse disciplines (consultancy, engineering of sales) 
+								span.narrow-column-shorten een motiverend groeipad wordt geboden voor de deelnemers. Door een evenwichtige samenstelling van theorie, praktijk en productkennis wordt de deelnemer kennis aangereikt op het gebied van nieuwe technologische ontwikkelingen.
+				.cert-cat__info__links
+					ul
+						li: a.more-link(href="") Meer informatie
+					p.small-print-info Master it Training biedt helaas geen Cisco certificeringen op expert niveau.
+		.col--cert-cat__products
+			.cert-cat__products
+				.custom-select
+					select.form-control
+						option(value='') Alles
+						option(value='' selected) Entry
+						option(value='') Associate
+						option(value='') Professional
+						option(value='') Expert
+				.tab-nav.tab-nav--toon
+					ul
+						li: a(href="#") Alles
+						li.active: a(href="#") Entry
+						li: a(href="#") Associate
+						li: a(href="#") Professional
+						li.unavailable: a(href="#") Expert
+				.product-blocks
+					.block--certificering
+						h4.product-code CCENT
+						h3.product-titel Routing & Switching
+					.block--certificering
+						h4.product-code CCENT
+						h3.product-titel Network Security
+					.block--certificering
+						h4.product-code CCENT
+						h3.product-titel Storage Networking
+					.block--certificering
+						h4.product-code CCENT
+						h3.product-titel Wireless
+					.block--certificering
+						h4.product-code CCENT
+						h3.product-titel Design
+					.block--certificering
+						h4.product-code CCENT
+						h3.product-titel Service Provider
+					.block--certificering
+						h4.product-code CCENT
+						h3.product-titel Voice
+		.col--intro__usp--mobile
+			.intro__usp--mobile
+				.intro__usp
+					h2 Haal je certificaat met de Master it Certificeringspas
+					ul
+						li Eén voordelige pas voor alle trainingen en examens
+						li Kies zelf wanneer en waar je wilt trainen
+						li Binnen een jaar ben je gecertificeerd!
+				.intro__links
+					ul
+						li: a(href="") Onze trainers
+						li: a(href="") Onze methode
+						li: a(href="") Erkenningen
+						li: a(href="") Referenties						
+		.col--intro__links
+			.intro__links
+				ul
+					li: a(href="") Onze trainers
+					li: a(href="") Onze methode
+					li: a(href="") Erkenningen
+					li: a(href="") Referenties							

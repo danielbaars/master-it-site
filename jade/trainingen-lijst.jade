@@ -1,0 +1,168 @@
+extends default
+block header
+	- var pageTitle = 'Trainingen | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'trainingen-lijst';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li
+					a(href='#') Home
+				li
+					a(href='#') Trainingen
+				li.active Windows Server				
+			ul.in-page-nav
+				li: a(href='#') 2012
+				li: a(href='#') 2010
+				li: a(href='#') 2008
+				li: a(href='#') 2005
+				li: a(href='#') Certificeringen
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1 Windows Server trainingen
+	+row('page-intro')
+		.col--page-intro
+			.page-intro
+				.row
+					.col--intro__text
+						.intro__text
+							p Hier komt de introductietekst met SEO-optimized termen voor deze pagina. Conseratur autempe libus. Biscid utem fuga. Ilitiis eaquidio corum  
+											span.hide-on-mobile il ium quo molor maioratquis as pa non nonseque. Em ipsunt fugitiust vid eario. Hendige niminct inveles nus iligendiatis vollorem soloritatiam aut ma non pa nossum atio. Imolori onsendunt ut aut eatempo reressi magnient magni cum nim idel ipit ute seditas aspe volendae poritatem corum volorum endaes dit venimi lorem ipsum ...
+							p
+								a.read-more-link(href='#') Meer informatie				
+					.col--in-page-nav
+						.in-page-nav--links.in-page-nav--mobile
+							ul
+								li: a(href='#') Windows Server 2012
+								li: a(href='#') Windows Server 2010
+								li: a(href='#') Windows Server 2008
+								li: a(href='#') Windows Server 2005
+					.col--intro__usp
+						.intro__usp
+							h2 Bij Master it Training leer je alleen wat je echt nodig hebt.
+							ul
+								li Ervaren trainers met state-of-the-art kennis
+								li Kies zelf wanneer en waar je wilt trainen
+								li Geplande trainingen gaan altijd door
+						.intro__links
+							ul
+								li: a(href="") Onze trainers
+								li: a(href="") Onze methode
+								li: a(href="") Erkenningen
+								li: a(href="") Referenties
+					.col--intro__links
+						.intro__links
+							ul
+								li: a(href="") Onze trainers
+								li: a(href="") Onze methode
+								li: a(href="") Erkenningen
+								li: a(href="") Referenties
+	+row('trainingen__categorie')
+		.col--trainingen__categorie
+			.trainingen__categorie
+				h2 Windows Server 2012
+				.block--training--full
+					h4.product-code MS10969
+					h3.product-titel Active Directory Services with Windows Server 2012 R2
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290
+				.block--training--full
+					h4.product-code MS20411
+					h3.product-titel Administering Windows Server 2012 R2
+					p.block__duur 5 dagen
+					p.block__kosten € 1.985
+					p.block__extra Korting
+					p.block__kosten--zonder-korting € 2.290
+				.block--training--full
+					h4.product-code PS30
+					h3.product-titel Automating Windows Administration with Windows PowerShell 3.0
+					p.block__duur 4 dagen
+					p.block__kosten € 1.795	
+				.block--training--full
+					h4.product-code MS20412
+					h3.product-titel Configuring Advanced Windows Server 2012 R2 Services
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290
+				.block--training--full
+					h4.product-code MS20413
+					h3.product-titel Designing and Implementing a Server Infrastructure
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290	
+				.block--training--full
+					h4.product-code MS20414
+					h3.product-titel Implementing an Advanced Server Infrastructure
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290
+				.block--training--full
+					h4.product-code MS20415
+					h3.product-titel Fundamentals of a Windows Server 2012 Infrastructure
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290	
+				.block--training--full
+					h4.product-code MS20410
+					h3.product-titel Designing a Business Intelligence Solution Architecture for the Enterprise using Microsoft SQL Server 2005
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290
+					p.block__extra Nieuw		
+				.block--training--full
+					h4.product-code MS10970
+					h3.product-titel Networking with Windows Server 2012 R2
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290
+				.block--training--full
+					h4.product-code MS20417
+					h3.product-titel Upgrading Your Skills to MCSA Windows Server 2012 en 2012 R2
+					p.block__duur 5 dagen
+					p.block__kosten € 1.985
+					p.block__extra Korting
+					p.block__kosten--zonder-korting € 2.290	
+	+row('trainingen__categorie')
+		.col--trainingen__categorie
+			.trainingen__categorie					
+				h2 Windows Server 2010
+				.block--training--full
+					h4.product-code MS20412
+					h3.product-titel Configuring Advanced Windows Server 2010 R2 Services
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290
+				.block--training--full
+					h4.product-code MS20413
+					h3.product-titel Designing and Implementing a Server Infrastructure
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290	
+				.block--training--full
+					h4.product-code MS20414
+					h3.product-titel Implementing an Advanced Server Infrastructure
+					p.block__duur 5 dagen
+					p.block__kosten € 2.290	
+	+row('trainingen__categorie')
+		.col--trainingen__categorie
+			.trainingen__categorie
+				h2 Windows Server Certificeringen
+				.block--certificering--full
+					h4.product-code MCSESI
+					h3.product-titel MCSE Server Infrastructure CertificeringsPas
+					p.block__duur 9 maanden
+					p.block__kosten bel!
+		.col--intro__usp--mobile
+			.intro__usp--mobile
+				.intro__usp
+					h2 Bij Master it Training leer je alleen wat je echt nodig hebt.
+					ul
+						li Ervaren trainers met state-of-the-art kennis
+						li Kies zelf wanneer en waar je wilt trainen
+						li Geplande trainingen gaan altijd door
+				.intro__links
+					ul
+						li: a(href="") Onze trainers
+						li: a(href="") Onze methode
+						li: a(href="") Erkenningen
+						li: a(href="") Referenties
+		.col--intro__links
+			.intro__links
+				ul
+					li: a(href="") Onze trainers
+					li: a(href="") Onze methode
+					li: a(href="") Erkenningen
+					li: a(href="") Referenties						

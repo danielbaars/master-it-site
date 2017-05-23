@@ -1,0 +1,170 @@
+extends default
+block header
+	- var pageTitle = 'Inschrijven | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'inschrijven';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li
+					a(href='#') Home
+				li
+					a(href='#') Trainingen
+				li
+					a(href='#') Windows Server
+				li
+					a(href='#') Fundamentals of a Windows Server 2012 Infrastructure
+				li.active
+					a(href='#') Inschrijven			
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1 Inschrijven
+				.back-link
+					i.fa.fa-angle-double-left 
+					a(href='#') Terug naar de training
+				h2 voor de training 
+					span Fundamentals of a Windows Server 2012 Infrastructure
+	+row('formulier-en-samenvatting')
+		.col--formulier-en-samenvatting
+			.formulier-en-samenvatting
+				.row.row--formulier-en-samenvatting
+					.col--samenvatting
+						.samenvatting
+							h4.product-code MS20415
+							h3.product-titel Fundamentals of a Windows Server 2012 Infrastructure
+							.product-info
+								span.product-duur 5 dagen 
+								span.product-methode open masterclass
+							ul.samenvatting__data
+								li 
+									span.dag Dag 1 
+									span.datum Ma 17 Aug 2014 
+									span.locatie Eindhoven
+								li 
+									span.dag Dag 2 
+									span.datum Di 18 Aug 2014 
+									span.locatie Eindhoven
+								li 
+									span.dag Dag 3 
+									span.datum Wo 19 Aug 2014 
+									span.locatie Eindhoven
+								li 
+									span.dag Dag 4 
+									span.datum Do 20 Aug 2014
+									span.locatie Eindhoven
+								li 
+									span.dag Dag 5 
+									span.datum Vr 21 Aug 2014
+									span.locatie Eindhoven
+							.aantal-deelnemers
+								p.aantal Aantal deelnemers: 1
+								p.voeg-toe: a(href='#') Voeg een deelnemer toe
+							.totale-kosten-berekening
+								p Totaal 1 x € 1.895 = 
+									span.totaal € 1.895
+							.samenvatting__small-print
+								| Prijs inclusief studiemateriaal, certificaat, koffie/thee en een uitgebreide lunch, exclusief 21% BTW							
+					.col--formulier
+						.formulier
+							.form__account-vraag
+								p
+									| Heeft u al een Master it Training account? 
+									a(href='#') Log in om uw gegevens op te halen.
+							.form__foutmelding
+								p   Vul alstublieft alle velden correct in.
+							.form__header
+								h2 Contactpersoon
+							form.form-horizontal.form--inschrijven(role="form")
+								.form-group.form-group--checkbox
+									label.col--form__left.control-label Deelnemer
+									.col--form__right
+										.checkbox
+											label
+												input(type='checkbox')
+												| Deze persoon is ook een deelnemer
+								.form-group.form-group--radio
+									label.col--form__left.control-label Aanhef
+									.col--form__right
+										label.radio-inline
+											input(type='radio', name='aanhef', value='dhr')
+											| De heer
+										label.radio-inline
+											input(type='radio', name='aanhef', value='mvr')
+											| Mevrouw
+								.form-group
+									label.col--form__left.control-label Naam
+									.col--form__right
+										.row
+											.col-xs-12.col-ts-4
+												input.form-control(name='Voornaam', type='text', placeholder='Voornaam...')
+											.col-xs-4.col-ts-3
+												input.form-control(name='Tussenvoegsel', type='text', placeholder='Tussenvoegsel...')
+											.col-xs-8.col-ts-5
+												input.form-control(name='Achternaam', type='text', placeholder='Achternaam...')
+								.form-group
+									label.col--form__left.control-label Bedrijfsnaam
+									.col--form__right
+										input.form-control(type='text', name='Bedrijfsnaam', placeholder='Bedrijfsnaam...')
+								.form-group
+									label.col--form__left.control-label Adres
+									.col--form__right
+										.row
+											.col-xs-9
+												input.form-control(type='text', name='Straat', placeholder='Straat...')
+											.col-xs-3
+												input.form-control(type='text', name='Nummer', placeholder='Nummer...')
+								.form-group
+									label.col--form__left.control-label Postcode en plaats
+									.col--form__right
+										.row
+											.col-xs-3
+												input.form-control(type='text', name='Postcode', placeholder='Postcode...')
+											.col-xs-9
+												input.form-control(type='text', name='Plaats', placeholder='Plaats...')
+								.form-group
+									label.col--form__left.control-label Land
+									.col--form__right
+										.custom-select
+											select.form-control
+												option(value='nederland') Nederland
+												option(value='belgie') België
+								.form-group.form-group--warning
+									label.col--form__left.control-label Telefoonnummer
+									.col--form__right
+										input.form-control(type='tel', name='Telefoonnummer', placeholder='Telefoonnummer...')
+								.form-group.form__email
+									label.col--form__left.control-label E-mail adres
+									.col--form__right
+										input.form-control(type='email', name='E-mail adres', placeholder='E-mail adres...')
+								.form-group.form-group--checkbox
+									.col--form__right--offset
+										.checkbox
+											label
+												input(type='checkbox', name='Updates')
+												| Ja, stuur mij nieuws & updates via e-mail
+								.form-group.form__vragen
+									label.col--form__left.control-label Vragen of opmerkingen 
+										span.optioneel (optioneel)
+									.col--form__right
+										textarea.form-control(rows="3", placeholder='Uw vraag of opmerking...')
+								.form-group.form-group--checkbox.form__factuuradres
+									label.col--form__left.control-label Factuuradres
+									.col--form__right
+										.checkbox
+											label
+												input(type='checkbox', name='Factuuradres')
+												| Gebruik een apart factuuradres
+								.form-group.form-group--checkbox.form__voorwaarden
+									label.col--form__left.control-label Voorwaarden
+									.col--form__right
+										.checkbox
+											label
+												input(type='checkbox', name='Voorwaarden')
+												| Ik ga akkoord met de algemene voorwaarden
+								.form-group.form__toevoegen
+									.col--form__right--offset
+										a.add-link(href='#') Voeg een deelnemer toe
+								.form-group.form__button
+									.col--form__right--offset
+										button(type='submit') Nu inschrijven

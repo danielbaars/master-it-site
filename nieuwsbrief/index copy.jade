@@ -1,0 +1,80 @@
+mixin table(rowClass, wrapperClass)
+	table(class='#{rowClass}')
+		tbody
+			tr
+				td(class='wrapper #{wrapperClass}')
+					table.twelve.columns
+						tbody
+							tr
+								block
+				
+extends default-external-stylesheets
+block header 
+	- var baseTitle = 'Master it Training Update';
+block content
+	+table('row online-version-link', 'last')
+		td.text-centered
+			a(href="http://www.masterit.nl/nieuwsbrief.html") Klik hier voor de online versie
+	+table('inner-container', 'last wrapper--no-padding')
+		td
+			+table('row hero__image', 'last')
+				td.mail-header.bg--dark
+					img(src="img/Master-It-Logo-550x200px-WHITE-RED-PADDED.png" alt="Master it logo")
+			+table('row hero__date', 'last')
+				td.bg--dark.text-centered.mail-date
+					| Update week 25, 2014					
+			+table('row body__text', 'last')
+				td.padding-left-right.blog-item			
+					h2.blog-title Blog: op afstand je office documenten bedienen
+					h3.blog-author Auteur: Michiel van der Arend
+					img.blog-image(src="img/officeremote_large_verge_medium_landscape-220x124px.jpg")
+					p De techniek staat voor niets! Met Windows Remote kun je nu ook via je Windows Phone je office documenten besturen. In dit blog lees je hoe het werkt. 
+						a(href="") Lees verder
+					p Wil je meer halen uit een office product waar je mee werkt? Bijvoorbeeld Excel, Word, Powerpoint of Outlook. 
+						a(href="") Kijk dan eens bij ons uitgebreide aanbod.
+			+table('row body__text', 'last')
+				td.padding-left-right.blog-item
+					h2.blog-title Office tip
+					img.blog-image(src="img/Microsoft-Excel-2007-220x165px.jpg")
+					p Excel: Twee werkbladen tegelijkertijd in beeld. Iedere week een handige office tip om nog slimmer te werken!
+					p: a(href="") Ga naar de tip
+					p: a(href="") Bekijk onze Excel trainingen	
+			+table('row body__text', 'last')
+				td.padding-left-right.blog-item
+					h2.blog-title Vacatures
+					img.blog-image(src="img/office-management-skills-220x165px.jpg")
+					p
+						strong Wil je werken bij een leuk bedrijf?
+					p We zijn op dit moment op zoek naar 3&nbsp;leuke nieuwe collega's.
+					p • Office manager (Utrecht)
+					p • Product manager (Eindhoven)
+					p • Microsoft SharePoint Specialist (Eindhoven)
+					p: a(href="") Meer weten?																																
+			+table('row footer', 'last')
+				td.padding-left-right.mail-footer
+					p 
+						a.ft__bedrijfsnaam(href="http://www.masterit.nl/nieuwsbrief.html") Master it Training
+						|  • Fellenoord 180 • 5611 ZB Eindhoven
+					p 040 23 23 390 • 
+						a(href="mailto:info@master-it.nl") info@master-it.nl
+					p.ft__social
+						a(href="#") 
+							img.social-icon(src="img/facebook-white-16px.png" alt="facebook" width="16" height="16")
+							| Facebook
+						| &nbsp;&nbsp;
+						a(href="#")						
+							img.social-icon(src="img/twitter-white-16px.png" alt="twitter" width="16" height="16")
+							| Twitter
+						| &nbsp;&nbsp;
+						a(href="#")						
+							img.social-icon(src="img/linkedin-white-16px.png" alt="linkedin" width="16" height="16")
+							| LinkedIn
+						| &nbsp;&nbsp;
+						a(href="#")						
+							img.social-icon(src="img/googleplus-white-16px.png" alt="googleplus" width="16" height="16")
+							| Google+						
+			+table('row subfooter', 'last')
+				td.padding-left-right.mail-subfooter
+					p U ontvangt deze nieuwsbrief omdat u zich hiervoor hebt aangemeld.
+					p 
+						strong Ik wil deze nieuwsbrief niet meer ontvangen				

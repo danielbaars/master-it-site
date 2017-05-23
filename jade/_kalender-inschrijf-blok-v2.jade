@@ -1,0 +1,101 @@
+.kalender-inschrijf-blok
+	.training-info.training-info--mobile
+		.tr-info__details
+			.trow
+				.tr-info__code MS20415
+				.tr-info__kosten € 1.895
+			.trow
+				.tr-info__methode open masterclass   
+				.tr-info__duur 5 dagen   
+		p.tr-info__small-print
+			| Prijs per deelnemer, inclusief studiemateriaal, certificaat, koffie/thee en een uitgebreide lunch, exclusief 21% BTW.
+		p.tr-info__actie 
+			span Schrijf je nu in en ontvang een voetbaltafel!		
+	.plan-en-kies
+		.plan-je-training
+			h2 Plan je training
+			form(role="form")
+				.radio
+					label
+						input#PlanJeTraining_0(type='radio', name='PlanJeTraining', value='week')
+						| Ik kies een week
+				.radio
+					label
+						input#PlanJeTraining_1(type='radio', name='PlanJeTraining', value='dagen')
+						| Ik plan dagen in
+				.radio		
+					label
+						input#PlanJeTraining_2(type='radio', name='PlanJeTraining', value='later')
+						| Dit doe ik later
+		.kies-je-locatie
+			h2 Kies je locatie
+			form(role="form")
+				.checkbox
+					label
+						input#KiesJeLocatie_0(type='checkbox', name='KiesJeLocatie', value='amsterdam')
+						| Amsterdam
+				.checkbox
+					label
+						input#KiesJeLocatie_1(type='checkbox', name='KiesJeLocatie', value='eindhoven')
+						| Eindhoven
+				.checkbox
+					label
+						input#KiesJeLocatie_2(type='checkbox', name='KiesJeLocatie', value='rotterdam')
+						| Rotterdam
+				.checkbox
+					label
+						input#KiesJeLocatie_3(type='checkbox', name='KiesJeLocatie', value='utrecht')
+						| Utrecht
+	.kalender
+		.js-datepicker
+	.training-info.training-info--desktop
+		ul
+			li.tr-info__code MS20415   
+			li.tr-info__duur 5 dagen   
+			li.tr-info__methode open masterclass   
+			li.tr-info__kosten € 1.895
+		p.tr-info__small-print
+			| Prijs per deelnemer, inclusief studiemateriaal, certificaat, koffie/thee en een uitgebreide lunch, exclusief 21% BTW.
+		p.tr-info__actie 
+			span Schrijf je nu in en ontvang een voetbaltafel!
+	.training-links
+		form.form-horizontal.form--inschrijven(role="form")
+			.form-group
+				label.col--form__left.control-label 1. Vrijdag 21 Augustus 2014
+				.col--form__right
+					.custom-select
+						select.form-control
+							option(value='amsterdam') Amsterdam
+							option(value='eindhoven') Eindhoven
+							option(value='rotterdam') Rotterdam
+							option(value='utrecht') Utrecht										
+			.form-group
+				label.col--form__left.control-label 2. Dinsdag 25 Augustus 2014
+				.col--form__right
+					.custom-select
+						select.form-control
+							option(value='amsterdam') Amsterdam
+							option(value='eindhoven') Eindhoven
+							option(value='rotterdam') Rotterdam
+							option(value='utrecht') Utrecht									
+			.form-group
+				label.col--form__left.control-label 3. Donderdag 27 Augustus 2014
+				.col--form__right
+					.custom-select
+						select.form-control
+							option(value='amsterdam') Amsterdam
+							option(value='eindhoven') Eindhoven
+							option(value='rotterdam') Rotterdam
+							option(value='utrecht') Utrecht									
+			.form-group
+				label.col--form__left.control-label.control-label--kies 4. Kies dag in de kalender...
+			.form-group
+				label.col--form__left.control-label.control-label--kies 5. Kies dag in de kalender...
+			.form-group.form__button
+				.col--form__left
+					.tr-info__korting Last minute korting: € 325
+				.col--form__right
+					button(type='submit') Schrijf je in	
+					.tr-info__share-link
+						a(href='#') Stuur training door							
+									

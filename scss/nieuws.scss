@@ -1,0 +1,131 @@
+@import "fonts";
+@import "../bower_components/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/variables";
+@import "../bower_components/bootstrap-sass-twbs/vendor/assets/stylesheets/bootstrap/mixins";
+@import "bootstrap-grid-extra-variables.scss";
+@import "colors";
+@import "misc-variables";
+@import "mixins";
+
+/* ! NIEUWS */
+
+.onderwerp-filter--dropdown {
+	margin-bottom: 20px;
+	@media #{$tablet} {
+		display: none;
+	}
+}
+
+.onderwerp-filter,
+.schrijver-filter {
+	display: none;
+	@media #{$tablet} {
+		display: block;
+	}
+	h2 {
+		@include module-header;
+		margin-bottom: 6px;
+	}
+	li {
+		margin-bottom: 6px;
+	}
+	a {
+		color: $brand-primary;
+		padding-right: 4px;
+	}
+}
+
+.schrijver-filter {
+	border-top: 1px solid $blue-cerulean-10;
+	padding-top: 14px;
+	margin-top: 14px;	
+}
+
+.nieuws-items {
+	@include clearfix;
+	@media #{$tablet} {
+		padding-bottom: 12px;
+		border-bottom: 1px solid $blue-cerulean-10;
+		margin-bottom: 22px;
+	}
+}
+
+
+.block--nieuws {
+	@include clearfix;
+	@include mobile-module-divider;
+	@media #{$tablet} {
+		padding-bottom: 16px;
+	}
+}
+
+
+.bnieuws__thumb--large {
+	display: none;
+	@media #{$tablet} {
+		display: block;
+	}
+	@include thumb;
+	margin-bottom: 9px;
+}
+
+.bnieuws__thumb--small {
+	@media #{$tablet} {
+		display: none;
+	}
+	@include thumb;
+	float: left;
+	width: 45%;
+	padding-top: 4px;
+	padding-right: 16px;
+	padding-bottom: 8px;
+}
+
+
+.bnieuws__title {
+	@include module-subheader;
+	padding-bottom: 4px;
+}
+
+.bnieuws__meta {
+	font-size: 14px;
+	line-height: 1.2;
+	margin-bottom: 4px;
+	color: $gray-light;
+}
+
+.bnieuws__datum {
+	padding-right: 6px;
+	&:after {
+		content: '•';
+		padding-left: 6px;
+	}
+}
+
+.bnieuws__text {
+	p {
+		@include module-text;
+		margin-bottom: 3px;
+	}
+	.more-link {
+		@include read-more-link;
+		@include read-more-link--small;
+		&:after {
+			padding-left: 4px;
+		}
+	}	
+}	
+
+
+.nieuws-items-footer {
+	text-align: center;
+	padding-bottom: 28px;
+	button {
+		@include custom-button;
+		@include button--main;
+		&:before {
+			content: '+';
+			margin-right: 4px;
+		}
+	}
+}
+

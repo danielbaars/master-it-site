@@ -1,0 +1,125 @@
+extends default
+block header
+	- var pageTitle = 'Zoek | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'zoek';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li: a(href='#') Home
+				li.active Zoek ‘server’				
+			ul.in-page-nav
+				li: a(href='#') In Trainingen
+				li: a(href='#') In Certificeringen
+				li: a(href='#') In Informatie
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1
+					| Zoek 
+					span.zoekterm ‘server’
+	+row('zoek__trainingen')
+		.col--zoek__trainingen
+			.zoek__trainingen
+				h2 Trainingen: 142 resultaten voor 
+					span.zoekterm ‘server’
+				.zoek__trainingen__nav
+					ul
+						li.nav-header Beheer:
+						li: a(href='#') Exchange Server
+						li: a(href='#') Lync Server
+						li: a(href='#') SQL Server
+						li: a(href='#') Windows Server
+				.zoek__trainingen__nav
+					ul
+						li.nav-header Development:
+						li: a(href='#') SQL Server
+				.zoek__blocks
+					.block--training
+						h4.product-code MS10969
+						h3.product-titel Active Directory Services with Windows Server 2012 R2
+					.block--training
+						h4.product-code PS30
+						h3.product-titel Designing a Business Intelligence Solution Architecture for the Enterprise using Microsoft SQL Server 2005						
+					.block--training
+						h4.product-code MS20411
+						h3.product-titel Administering Windows Server 2012 R2
+					.block--training
+						h4.product-code MS20412
+						h3.product-titel Configuring Advanced Windows Server 2012 R2 Services
+					.block--training
+						h4.product-code MS20412
+						h3.product-titel Configuring Advanced Windows Server 2012 R2 Services	
+				.row
+					.col--zoek__button
+						.zoek__button
+							button(type='button') Alle 142 trainingen	
+	+row('zoek__certificeringen')
+		.col--zoek__certificeringen
+			.zoek__certificeringen
+				h2 Certificeringen: 63 resultaten voor 
+					span.zoekterm ‘server’	
+				.zoek__blocks
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel SQL Server 2008
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows Server 2008
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows Server 2012
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows Server 2012 Upgrade
+					.block--certificering
+						h4.product-code MCSA
+						h3.product-titel Windows Server 2012 Upgrade
+				.row
+					.col--zoek__button
+						.zoek__button												
+							button(type='button') Alle 63 certificeringen					
+	+row('zoek__informatie')
+		.col--zoek__informatie
+			.zoek__informatie
+				h2 Informatie: 126 resultaten voor 
+					span.zoekterm ‘server’	
+				.zoek__info__item
+					h3: a(href='#') Paginatitel volorem doluptati sequo autpat
+					p ...nullici andam, consequi comnima ximaxim commolu ptatus 
+						span.zoekterm server
+						| , rem utecea doluptati quam que et imet ut 
+						span.zoekterm server 
+						| oditaquibus dolorup tatat re nem sequo ipidigentis...
+				.zoek__info__item
+					h3: a(href='#') Paginatitel volorem doluptati sequo autpat
+					p ...nullici andam, consequi comnima ximaxim commolu ptatus 
+						span.zoekterm server
+						| , rem utecea doluptati quam que et imet ut 
+						span.zoekterm server 
+						| oditaquibus dolorup tatat re nem sequo ipidigentis...
+				.zoek__info__item
+					h3: a(href='#') Paginatitel volorem doluptati sequo autpat
+					p ...nullici andam, consequi comnima ximaxim commolu ptatus 
+						span.zoekterm server
+						| , rem utecea doluptati quam que et imet ut 
+						span.zoekterm server 
+						| oditaquibus dolorup tatat re nem sequo ipidigentis...
+				.zoek__info__item
+					h3: a(href='#') Paginatitel volorem doluptati sequo autpat
+					p ...nullici andam, consequi comnima ximaxim commolu ptatus 
+						span.zoekterm server
+						| , rem utecea doluptati quam que et imet ut 
+						span.zoekterm server 
+						| oditaquibus dolorup tatat re nem sequo ipidigentis...
+				.zoek__info__item
+					h3: a(href='#') Paginatitel volorem doluptati sequo autpat
+					p ...nullici andam, consequi comnima ximaxim commolu ptatus 
+						span.zoekterm server
+						| , rem utecea doluptati quam que et imet ut 
+						span.zoekterm server 
+						| oditaquibus dolorup tatat re nem sequo ipidigentis...
+				.row
+					.col--zoek__button
+						.zoek__button						
+							button(type='button') Meer resultaten

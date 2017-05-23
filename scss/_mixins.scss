@@ -1,0 +1,666 @@
+/* ! FUNCTIONS */
+
+@function clamp($value, $min, $max) {
+  @return if($value > $max, $max, if($value < $min, $min, $value));
+}
+
+/* ! CONTENT CHOREOGRAPHY */
+
+@mixin boxit ($dir) {
+	display:box;
+	display:-moz-box;
+	display:-webkit-box;
+	box-orient:$dir;
+	-moz-box-orient:$dir;
+	-webkit-box-orient:$dir;
+}
+ 
+@mixin order ($num) {
+	box-ordinal-group: 1;
+	-moz-box-ordinal-group: 1;
+	-webkit-box-ordinal-group: 1;
+	box-ordinal-group: #{$num};
+	-moz-box-ordinal-group: #{$num};
+	-webkit-box-ordinal-group: #{$num};
+}
+
+@mixin flex ($dir) {
+	display: flex;
+	flex-direction: $dir;
+}
+ 
+@mixin flex-order ($num) {
+	order: #{$num};
+}
+
+/* ! GENERAL */
+
+@mixin font-awesome {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+@mixin horizontal-list($padding: 10px) {
+	padding-left: 0;
+	list-style: none;
+	> li {
+		display: inline-block;
+		padding-right: $padding;
+		&:last-child {
+			padding-right: 0;
+		}
+	}	
+}
+
+@mixin bg-size ($new-width, $width, $height) {
+	background-size: $new-width floor(($new-width * ($height/$width)));
+}
+
+@mixin padding ($padding: $padding-base, $right: 0px, $top: 0px, $bottom: 0px) {
+	padding-left: $padding;
+	padding-right: $padding + $right;
+	padding-top: $padding + $top;
+	padding-bottom: $padding + $bottom;
+}
+
+@mixin vertical-padding ($padding: $padding-base, $multiplier: 1) {
+	padding-top: $padding;
+	padding-bottom: $padding * $multiplier;
+}
+
+@mixin horizontal-padding ($padding: $padding-base) {
+	padding-left: $padding;
+	padding-right: $padding;
+}
+
+
+/* ! TEXT */
+
+
+@mixin page-heading-font {
+	font-family: $headings-font-family;
+	font-weight: $semi-bold;
+	span {
+		color: $brand-primary;
+	}
+}
+
+@mixin page-heading-size {
+	font-size: 30px;
+	line-height: 1.05;
+	@media #{$tablet-small} {
+		font-size: 36px;
+		letter-spacing: -0.9px;
+		margin-bottom: 12px;
+	}
+	@media #{$desktop} {
+		font-size: 42px;
+	}		
+}
+
+@mixin page-heading {
+	@include page-heading-font;
+	@include page-heading-size;	
+}
+
+
+
+@mixin intro-text-fs($extra:0) {
+	font-size: clamp(15px + $extra, 14px, 24px);
+	@media #{$phablet} {
+		font-size: clamp(16px + $extra, 14px, 24px);
+	}	
+	@media #{$tablet-small} {
+		font-size: clamp(18px + $extra, 14px, 24px);
+	}
+}
+
+@mixin intro-text-p {
+	font-weight: $regular;
+	line-height: 1.4;
+	margin-bottom: 10px;
+	@media #{$phablet} {
+		line-height: 1.5;
+	}
+	@media #{$tablet-small} {
+		line-height: 1.6;
+	}	
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@mixin intro-list($margin:4px) {
+	font-weight: $regular;
+	line-height: 1.3;
+	margin-bottom: $margin;
+	position: relative;
+	padding-left: 20px;
+	@media #{$phablet} {
+		margin-bottom: $margin + 4px;
+		padding-left: 24px;
+	}
+	@media #{$tablet-small} {
+		margin-bottom: $margin + 8px;
+		padding-left: 29px;
+	}
+	.fa {
+		position: absolute;
+		top: 3px;
+		left: 0;
+		font-size: 14px;
+		color: green;
+		@media #{$phablet} {
+			top: 1px;
+			font-size: 17px;
+		}
+		@media #{$tablet-small} {
+			top: -2px;
+			font-size: 20px;
+		}			
+	}
+}
+
+@mixin list-item($margin:8px) {
+	font-weight: $regular;
+	line-height: 1.3;
+	margin-bottom: $margin;
+	&:last-child {
+		margin-bottom: 0;
+	}	
+}
+
+@mixin unordered-list {
+	li {
+		&:before{
+			display: inline-block;
+			vertical-align: text-top;
+			padding-top: 0.6em;	
+			@include font-awesome;
+			content: "\f0c8";
+			color: green;
+			font-size: 0.6em;
+			padding-right: 4px;
+		}		
+	}
+}
+
+@mixin ordered-list {
+	counter-reset: ol-counter;
+	li {
+		&:before {
+			content: counter(ol-counter) ". ";
+		    counter-increment: ol-counter;
+		    padding-right: 4px;
+		}
+	}
+}
+
+@mixin ordered-list2 {
+	counter-reset: ol-counter;
+	li {
+		position: relative;
+		padding-left: 20px;
+		&:before {
+			content: counter(ol-counter) ". ";
+		    counter-increment: ol-counter;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		}
+	}
+}
+
+/* ! BUTTONS */
+
+
+@mixin custom-button {
+	display: inline-block;
+	margin-bottom: 0;
+	margin-right: 12px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: $bold;
+	cursor: pointer;
+	background-image: none;
+	border: none;
+	border-radius: 0;
+	white-space: nowrap;
+	@include padding(12px,0,-3px,-3px);
+	@include user-select(none);
+	&:hover {
+		background-color: $brand-primary;
+	}
+	.fa {
+		margin-left: 6px;
+	}
+}
+
+@mixin button--main {
+  color: white;
+  background-color: $green-pigment;
+}
+
+@mixin button--arrow {
+	&:after {
+		@include font-awesome;
+		content: "\f061";
+		padding-left: 6px;
+	}
+}
+
+@mixin add-link {
+	color: $brand-primary;
+	position: relative;
+	&:before {
+		position: absolute;
+		content: "+";
+		left: 0;
+		font-size: 1.4em;
+	}
+	&:hover {
+		color: $master-it-red;
+	}
+}
+
+@mixin add-link--default {
+	font-weight: $bold;
+	padding-left: 16px;
+	&:before {
+		top: -5px;
+		margin-right: 4px;
+	}	
+}
+
+@mixin add-link--small {
+	font-size: 14px;
+	font-weight: $regular;
+	padding-left: 12px;
+	&:before {
+		top: -5px;
+		margin-right: 2px;
+	}	
+}
+
+@mixin custom-select {
+	position: relative;
+	&:after {
+		@include font-awesome;
+		content: "\f0dc";
+		position: absolute;
+		top: 10px;
+		right: 14px;
+		color: $text-color;
+	}
+	select {
+		-webkit-appearance: none;
+	    -moz-appearance: none;
+	    border-radius: 0;
+	}   
+}
+
+@mixin read-more-link {
+	position: relative;
+	color: $brand-primary;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:after {
+		@include font-awesome;
+		position: absolute;
+		top: 3px;
+		right: -14px;
+		content: "\f101";
+		color: $master-it-red;
+	}
+}
+
+@mixin read-more-link--small {
+	&:after {
+		top: 2px;
+		right: -12px;
+	}
+}
+
+
+@mixin more-link {
+	line-height: 1.1;
+	color: $brand-primary;
+	&:after {
+		display: inline-block;
+		vertical-align: text-top;
+		padding-top: 0.18em;
+		padding-left: 4px;
+		@include font-awesome;
+		content: "\f101";
+		color: $master-it-red;
+	}
+	&:hover {
+		text-decoration: underline;
+	}	
+}
+
+@mixin faq {
+	h4 {
+		padding-bottom: 14px;
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+	}
+	a {
+		&:before {
+			@include font-awesome;
+			content: "\f068";
+			color: $master-it-red;
+			margin-right: 8px;
+		}
+		cursor: pointer;
+	}
+	a.collapsed {
+		&:before {
+			content: "\f067";
+		}
+	}
+	p {
+		padding-left: 22px;
+	}
+}
+
+
+/* ! SPECIFIC */
+
+@mixin product-code {
+	display: inline-block;
+	@include padding(6px,0,-4px,-4px);
+	background-color: $brand-primary;
+	color: white;
+}
+
+@mixin product-titel {
+	display: block;
+	font-weight: $bold;
+	line-height: 1.1;
+	color: $brand-primary !important;
+	margin-bottom: 9px;
+}
+
+@mixin site-logo ($height) {
+	.site-logo {
+		width: $height * 3.169; // Hoogte van logo is bepalend
+		height: $height;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@mixin logo-container($new-height, $height, $width) {
+	width: $new-height * ($height/$width);
+	height: $new-height;
+}
+
+
+
+/* ! MODULE TEXT */
+
+@mixin module-header {
+	font-size: 22px;
+	line-height: 1.1;
+	font-weight: $bold;
+	text-transform: uppercase;
+	color: $brand-primary;
+	margin-bottom: 12px;
+}
+
+@mixin module-text {
+	font-size: 15px;
+	line-height: 1.4;
+	font-weight: $regular;
+	margin-bottom: 10px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+@mixin module-subheader($extra:0) {
+	font-size: 16px + $extra;
+	line-height: 1.2;
+	font-weight: bold;
+	color: $brand-primary;
+	padding-bottom: 10px;
+	@media #{$phablet} {
+		font-size: 18px + $extra;
+	}
+}
+
+@mixin module-small-header {
+	font-size: 15px;
+	line-height: 1.4;
+	font-weight: $bold;
+	color: $brand-primary;
+	padding-bottom: 4px;
+	@media #{$phablet} {
+		font-size: 16px;
+	}	
+}
+
+
+/* ! PANELS */
+
+@mixin panel-padding {
+	@include padding(18px, 0, -2px, -1px);
+}
+
+@mixin panel--light-blue {
+	@include panel-padding;
+	background-color: $blue-cerulean-05;
+	color: $text-color;
+	h2 {
+		color: $brand-primary;
+	}
+}
+
+@mixin panel--sand {
+	@include panel-padding;
+	background-color: lighten($pms-warm-grey-7, 39%);
+	color: $text-color;
+	h2 {
+		color: $brand-primary;
+	}
+}
+
+@mixin panel--light-orange {
+	@include panel-padding;
+	background-color: $orange-dark-06;
+	border: 1px solid $orange-dark-10;
+	color: $text-color;
+	h2 {
+		color: $text-color;
+	}
+}
+
+
+@mixin train-cert__cat--light-blue {
+	.active a {
+		color: $brand-primary;
+		&:after {
+			background-color: lighten($brand-primary, 50%);
+		}
+	}
+	a:hover {
+		color: $brand-primary;
+	}
+}
+
+@mixin train-cert__prod--light-blue {
+	@media #{$phablet} {
+		border-left: 1px solid lighten($brand-primary, 50%);
+	}
+	span {
+		color: $brand-primary;
+	}
+}
+
+$connection-line--green-panel: lighten($green-pigment, 8%);
+
+@mixin panel--green {
+	@include panel-padding;
+	background-color: $green-pigment;	
+	color: white;
+	h2 {
+		color: white;
+	}	
+}
+
+@mixin train-cert__cat--green {
+	.active a {
+		color: yellow;
+		&:after {
+			background-color: $connection-line--green-panel;
+		}
+	}
+	a:hover {
+		color: yellow;
+	}
+}
+
+@mixin train-cert__prod--green {
+	@media #{$phablet} {
+		border-color: $connection-line--green-panel;
+		&:before {
+			background-color: $connection-line--green-panel;
+		}		
+	}
+	span {
+		color: yellow;
+	}
+}
+
+/* ! PRODUCT BLOCKS */
+
+@mixin product-block($height:130px) {
+	position: relative;
+	display: block;
+	float: left;
+	@include padding(10px,0,23px,0);
+	height: $height;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-right: 20px;	
+	.product-code {
+		display: block;
+		@include padding(6px,0,-4px,-4px);
+		font-size: 14px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.product-titel {
+		display: block;
+		font-weight: $bold;
+		line-height: 1.2;
+		margin-bottom: 6px;
+	}
+}
+
+@mixin block-colors--main {
+	background-color: $blue-cerulean-05;
+	border: 1px solid $blue-cerulean-10;
+	.product-code {
+		background-color: $brand-primary;
+		color: white;		
+	}
+	.product-titel {
+		color: $brand-primary;
+	}
+	&:hover {
+		background-color: $brand-primary;
+		color: white;
+		cursor: pointer;
+		.product-code {
+			background-color: $master-it-red;
+			color: white;
+		}
+		.product-titel {
+			color: white;
+		}
+	}	
+}
+
+@mixin block-colors--orange {
+	background-color: tint($orange-dark, 94%);
+	border: 1px solid tint($orange-dark, 82%);
+	.product-code {
+		background-color: $orange-dark;
+		color: white;		
+	}
+	.product-titel {
+		color: shade($orange-dark, 60%);
+	}
+	&:hover {
+		background-color: $orange-dark;
+		color: white;
+		cursor: pointer;
+		.product-code {
+			background-color: $brand-primary;
+			color: white;
+		}
+		.product-titel {
+			color: white;
+		}
+	}	
+}
+
+
+@mixin product-list {
+	li {
+		padding-bottom: 8px;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	span {
+		text-transform: uppercase;
+		font-size: 0.8em;
+		padding-left: 6px;
+	}
+	a:hover {
+		text-decoration: underline;
+	}	
+}
+
+@mixin mobile-module-divider {
+	@media #{$phone-tablet-small-only} {
+		border-bottom: 1px solid $blue-cerulean-10;
+	}
+	@media #{$phone-only} {
+		padding-bottom: 16px;
+		margin-bottom: 16px;
+	}
+	@media #{$phablet-only} {
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	@media #{$tablet-small-only} {
+		padding-bottom: 22px;
+		margin-bottom: 22px;
+	}	
+}
+
+@mixin module-divider {
+	border-bottom: 1px solid $blue-cerulean-10;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+}
+
+@mixin thumb {
+	img {
+		width: 100%;
+	}
+}

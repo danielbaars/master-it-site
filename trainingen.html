@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Trainingen | Master it Training - 650 IT trainingen en cursussen</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/datepicker3.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/nieuws.css">
+    <script src="../bower_components/modernizr/modernizr.js">		</script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+    <script src="https://use.typekit.net/xkp0gco.js"></script>
+    <script type="text/javascript">try{Typekit.load({ async: true });}catch(e){}</script><!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body class="trainingen">
+    <div class="navbar navbar-fixed-top sticky-header">
+      <div class="container">
+        <div class="row">
+          <div class="col--sticky-header">
+            <div class="sticky__logo"><a href="/"><img src="../img/Master-It-Logo-507x160px-WHITE-RED.png" alt="Master it Training"></a></div>
+            <nav class="sticky__nav">
+              <ul class="nav navbar-nav">
+                <li class="nav__home"><a href="/">Home</a></li>
+                <li class="nav__trainingen sticky__link"><a href="trainingen.html">Trainingen</a></li>
+                <li class="nav__certificeringen"><a href="certificeringen.html">Certificeringen</a></li>
+                <li class="nav__master-it"><a href="master-it.html">Master it</a></li>
+                <li class="nav__nieuws"><a href="nieuws.html">Nieuws</a></li>
+                <li class="nav__contact"><a href="contact.html">Contact																								</a></li>
+              </ul>
+            </nav>
+            <div class="sticky__icon"><a href="#" class="search"><i class="fa fa-search"></i></a></div>
+            <div class="sticky__icon"><a href="templates.html" class="cart"><i class="fa fa-shopping-cart"></i></a></div>
+            <div class="sticky__icon"><a href="templates.html" class="cart"><i class="fa fa-arrow-circle-o-up"></i></a></div>
+          </div>
+        </div>
+        <div class="row">									
+          <div class="col--sticky__crumbs">
+            <ol class="sticky__crumbs">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sectie</a></li>
+              <li><a href="#">Onderwerp</a></li>
+              <li class="active">Huidige pagina lorem ipsum</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--mobile-header navbar-fixed-top">
+      <nav id="offCanvasMenu" role="navigation" class="navmenu navmenu-default navmenu-inverse navmenu-fixed-left offcanvas">
+        <ul class="nav navmenu-nav off__main">
+          <li class="nav__home"><a href="/">Home</a></li>
+          <li class="nav__trainingen"><a href="trainingen.html">Trainingen</a></li>
+          <li class="nav__certificeringen"><a href="certificeringen.html">Certificeringen</a></li>
+          <li class="nav__master-it"><a href="master-it.html">Master it</a></li>
+          <li class="nav__nieuws"><a href="nieuws.html">Nieuws</a></li>
+          <li class="nav__contact"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="nav navmenu-nav off__contact">
+          <li class="telefoon"><a href="#">040 23 23 390</a></li>
+          <li class="chat"><a href="#">chatten</a></li>
+          <li class="email"><a href="mailto:info@masterit.nl">mailen</a></li>
+        </ul>
+        <ul class="nav navmenu-nav off__extra">
+          <li class="english"><a href="#">English</a></li>
+          <li class="login"><a href="login.html">Log in</a></li>
+          <li class="cart"><a href="cart.html">Winkelmand (0)</a></li>
+          <li class="zoek"><a href="#">Zoek</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col--mobile-menu-left">
+            <div class="mobile-menu__left">
+              <div class="row">
+                <div class="col--hamburger-icon"><a data-toggle="offcanvas" data-target="#offCanvasMenu" data-canvas="body" class="hamburger"><i class="fa fa-bars"></i></a></div>
+                <div class="col--phone-icon"><a href="tel:+31402323390" class="phone"><i class="fa fa-phone"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col--brand">
+            <div class="hd__branding">
+              <h1 class="site-name">Master it Training</h1>
+              <div class="site-logo"><a href="/"><img src="../img/Master-It-Logo-507x160px-WHITE-RED.png" alt="Master it Training" class="logo--white"></a></div>
+            </div>
+          </div>
+          <div class="col--mobile-menu-right">
+            <div class="mobile-menu__right">
+              <div class="row">
+                <div class="col--search-icon"><a href="#" data-toggle="collapse" data-target=".mobile-search-input" class="search"><i class="fa fa-search"></i></a></div>
+                <div class="col--cart-icon"><a href="templates.html" class="cart"><i class="fa fa-shopping-cart"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col--mobile-search-input">
+            <div class="mobile-search-input collapse">
+              <div class="input-group">
+                <input id="hd__search" type="text" placeholder="Zoek training, certificaat of informatie..." class="form-control"><span class="input-group-btn">
+                  <button type="button" class="btn btn-primary">Zoek									</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--header">
+      <div class="container">
+        <div class="row">
+          <div class="col--brand">
+            <div class="hd__branding">
+              <h1 class="site-name">Master it Training</h1>
+              <div class="site-logo"><a href="/"><img src="../img/Master-It-Logo-507x160px.png" alt="Master it Training" class="logo--blue"><img src="../img/Master-It-Logo-507x160px-WHITE-RED.png" alt="Master it Training" class="logo--white"></a></div>
+            </div>
+          </div>
+          <div class="col--search-contact">
+            <div class="hd__contact-details-and-search">
+              <div class="hd__contact-details">
+                <ul>
+                  <li class="details__telephone"><i class="fa fa-phone-square"></i><a href="tel:+31402323390">040 23 23 390</a></li>
+                  <li class="details__chat"><i class="fa fa-comment"></i><a href="#">chatten</a></li>
+                  <li class="details__email"><i class="fa fa-envelope"></i><a href="mailto:info@master-it.nl">mailen</a></li>
+                  <li class="details__opening-hours">ma-vr 9:00-19:00</li>
+                </ul>
+              </div>
+              <div class="hd__search">
+                <div class="input-group">
+                  <input id="hd__search" type="text" placeholder="Zoek training, certificaat of informatie..." class="form-control"><span class="input-group-btn">
+                    <button type="button" class="btn btn-primary">Zoek</button></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col--shopping-cart">
+            <div class="hd__language-and-login">
+              <ul>
+                <li class="english"><a href="#">English</a></li>
+                <li class="login"><a href="login.html">Log in</a></li>
+              </ul>
+            </div>
+            <div class="hd__shopping-cart"><i class="fa fa-shopping-cart"></i><a href="templates.html">Winkelwagen <span class="cart__byline">online inschrijven</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--nav">
+      <div class="container">
+        <div class="row">
+          <div class="col--main-nav">
+            <nav class="main-nav">
+              <ul class="nav navbar-nav">
+                <li class="nav__home"><a href="/">Home</a></li>
+                <li class="nav__trainingen"><a href="trainingen.html">Trainingen</a></li>
+                <li class="nav__certificeringen"><a href="certificeringen.html">Certificeringen</a></li>
+                <li class="nav__master-it"><a href="master-it.html">Master it</a></li>
+                <li class="nav__nieuws"><a href="nieuws.html">Nieuws</a></li>
+                <li class="nav__contact"><a href="contact.html">Contact	</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col--breadcrumbs">
+            <ol class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li class="active">Trainingen				</li>
+            </ol>
+            <ul class="in-page-nav">
+              <li><a href="#">Top 10</a></li>
+              <li><a href="#">Beheer</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Gebruik</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--mobile-header-image">
+      <div class="mobile-header-image"><img src="../img/BB_140616MASTER-4396-1600x444px.jpg"></div>
+    </div>
+    <div class="outer--page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col--page-header">
+            <div class="page-header">
+              <h1>Trainingen</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--page-intro">
+      <div class="container">
+        <div class="row">
+          <div class="col--page-intro">
+            <div class="page-intro">
+              <div class="row">
+                <div class="col--intro__text">
+                  <div class="intro__text">
+                    <p>Hier komt de introductietekst met SEO-optimized termen voor deze pagina. Conseratur autempe libus. Biscid utem fuga. Ilitiis eaquidio corum il ium quo molor maioratquis as pa non nonseque. Em ipsunt fugitiust vid eario. Hendige niminct inveles nus iligendiatis vollorem soloritatiam aut ma non pa nossum atio. Imolori onsendunt ut aut eatempo reressi magnient magni cum nim idel ipit ute seditas aspe volendae poritatem corum volorum endaes dit venimi.</p>
+                  </div>
+                </div>
+                <div class="col--intro__usp">
+                  <div class="intro__usp">
+                    <h2>Bij Master it Training leer je alleen wat je echt nodig hebt.</h2>
+                    <ul>
+                      <li>Ervaren trainers met state-of-the-art kennis</li>
+                      <li>Kies zelf wanneer en waar je wilt trainen</li>
+                      <li>Geplande trainingen gaan altijd door</li>
+                    </ul>
+                  </div>
+                  <div class="intro__links">
+                    <ul>
+                      <li><a href="">Onze trainers</a></li>
+                      <li><a href="">Onze methode</a></li>
+                      <li><a href="">Erkenningen</a></li>
+                      <li><a href="">Referenties</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col--intro__links">
+                  <div class="intro__links">
+                    <ul>
+                      <li><a href="">Onze trainers</a></li>
+                      <li><a href="">Onze methode</a></li>
+                      <li><a href="">Erkenningen</a></li>
+                      <li><a href="">Referenties</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--top-10-en-beheer">
+      <div class="container">
+        <div class="row">
+          <div class="col--trainingen__top-10">
+            <div class="aanbod-overzicht aanbod__top-10">
+              <h2><span>Top 10 trainingen & certificeringen</span></h2>
+              <ol>
+                <li><a href="#"> <span class="product-code-cell"> <span class="product-code">MS6292</span></span><span class="product-name">Installing and Configuring Windows 7 Client</span></a></li>
+                <li><a href="#"><span class="product-code-cell"> <span class="product-code">MSEX01</span></span><span class="product-name">Microsoft Examenvoucher<span class="product-extra">Nieuw</span></span></a></li>
+                <li><a href="#"><span class="product-code-cell"> <span class="product-code">MS10774</span></span><span class="product-name">Querying Microsoft SQL Server 2012</span></a></li>
+                <li><a href="#"><span class="product-code-cell"> <span class="product-code">MS10266</span></span><span class="product-name">Programming with C# using Microsoft .NET Framework 4</span></a></li>
+                <li><a href="#"><span class="product-code-cell"> <span class="product-code">MS6425</span></span><span class="product-name">Configuring and Troubleshooting Windows Server 2008 Active Directory Domain Services<span class="product-extra">Korting</span></span></a></li>
+                <li><a href="#"><span class="product-code-cell"> <span class="product-code">MS6292</span></span><span class="product-name">Installing and Configuring Windows 7 Client</span></a></li>
+                <li><a href="#"><span class="product-code-cell"> <span class="product-code">MSEX01</span></span><span class="product-name">Microsoft Examenvoucher</span></a></li>
+                <li><a href="#"><span class="product-code-cell"> <span class="product-code">MS10774</span></span><span class="product-name">Querying Microsoft SQL Server 2012</span></a></li>
+                <li><a href="#"><span class="product-code-cell"> <span class="product-code">MS10266</span></span><span class="product-name">Programming with C# using Microsoft .NET Framework 4</span></a></li>
+                <li><a href="#"><span class="product-code-cell"> <span class="product-code">MS6425</span></span><span class="product-name">Configuring and Troubleshooting Windows Server 2008 Active Directory Domain Services</span></a></li>
+              </ol>
+            </div>
+          </div>
+          <div class="col--trainingen__beheer">
+            <div class="trainingen__beheer">
+              <h2>Beheer</h2>
+              <div class="row">
+                <div class="col--trainingen__beheer__microsoft">
+                  <div class="trainingen__beheer__microsoft">
+                    <h3>Microsoft</h3>
+                    <ul>
+                      <li><a href="#">BizTalk</a><span class="aantal">(2)</span></li>
+                      <li><a href="#">Exchange Server</a><span class="aantal">(15)</span></li>
+                      <li><a href="#">Forefront</a><span class="aantal">(4)</span></li>
+                      <li><a href="#">Lync Server</a><span class="aantal">(9)</span></li>
+                      <li><a href="#">CRM</a><span class="aantal">(16)</span></li>
+                      <li><a href="#">Scripting</a><span class="aantal">(6)</span></li>
+                      <li><a href="#">SharePoint</a><span class="aantal">(14)</span></li>
+                      <li><a href="#">SQL Server</a><span class="aantal">(40)</span></li>
+                      <li><a href="#">System Center</a><span class="aantal">(16)</span></li>
+                      <li><a href="#">Windows</a><span class="aantal">(18)</span></li>
+                      <li><a href="#">Windows Server</a><span class="aantal">(42)</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col--trainingen__beheer__algemeen">
+                  <div class="trainingen__beheer__algemeen">
+                    <h3>Algemeen</h3>
+                    <ul>
+                      <li><a href="#">Cisco</a><span class="aantal">(9)</span></li>
+                      <li><a href="#">Citrix</a><span class="aantal">(11)</span></li>
+                      <li><a href="#">Cloud Computing</a><span class="aantal">(20)</span></li>
+                      <li><a href="#">CompTIA</a><span class="aantal">(4)</span></li>
+                      <li><a href="#">Juniper</a><span class="aantal">(10)</span></li>
+                      <li><a href="#">Linux</a><span class="aantal">(6)</span></li>
+                      <li><a href="#">NetApp</a><span class="aantal">(6)</span></li>
+                      <li><a href="#">Oracle</a><span class="aantal">(16)</span></li>
+                      <li><a href="#">RES Software</a><span class="aantal">(5)</span></li>
+                      <li><a href="#">Security</a><span class="aantal">(7)</span></li>
+                      <li><a href="#">VMware</a><span class="aantal">(10)</span></li>
+                      <li><a href="#">Overig</a><span class="aantal">(12)</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--development-en-gebruik">
+      <div class="container">
+        <div class="row">
+          <div class="col--trainingen__development">
+            <div class="trainingen__development">
+              <h2>Development</h2>
+              <div class="row">
+                <div class="col--trainingen__development__microsoft">
+                  <div class="trainingen__development__microsoft">
+                    <h3>Microsoft</h3>
+                    <ul>
+                      <li><a href="#">ASP.NET / ADO.NET</a><span class="aantal">(12)</span></li>
+                      <li><a href="#">BizTalk</a><span class="aantal">(2)</span></li>
+                      <li><a href="#">SharePoint</a><span class="aantal">(13)</span></li>
+                      <li><a href="#">SQL Server</a><span class="aantal">(15)</span></li>
+                      <li><a href="#">VBA (Microsoft Office)</a><span class="aantal">(4)</span></li>
+                      <li><a href="#">Visual Basic 6</a><span class="aantal">(1)</span></li>
+                      <li><a href="#">Visual Basic.NET</a><span class="aantal">(1)</span></li>
+                      <li><a href="#">Visual C#.NET</a><span class="aantal">(8)</span></li>
+                      <li><a href="#">Visual Studio</a><span class="aantal">(44)</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col--trainingen__development__algemeen">
+                  <div class="trainingen__development__algemeen">
+                    <h3>Algemeen</h3>
+                    <ul>
+                      <li><a href="#">C/C++</a><span class="aantal">(5)</span></li>
+                      <li><a href="#">HTML5</a><span class="aantal">(9)</span></li>
+                      <li><a href="#">Internet</a><span class="aantal">(3)</span></li>
+                      <li><a href="#">Java</a><span class="aantal">(10)</span></li>
+                      <li><a href="#">JavaScript</a><span class="aantal">(4)</span></li>
+                      <li><a href="#">Packaging / Installing</a><span class="aantal">(3)</span></li>
+                      <li><a href="#">XML</a><span class="aantal">(3)</span></li>
+                      <li><a href="#">Overig</a><span class="aantal">(10)</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col--trainingen__gebruik">
+            <div class="trainingen__gebruik">
+              <h2>Eindgebruik</h2>
+              <div class="row">
+                <div class="col--trainingen__gebruik__microsoft">
+                  <div class="trainingen__gebruik__microsoft">
+                    <h3>Microsoft</h3>
+                    <ul>
+                      <li><a href="#">Access</a><span class="aantal">(3)</span></li>
+                      <li><a href="#">CRM</a><span class="aantal">(11)</span></li>
+                      <li><a href="#">Excel</a><span class="aantal">(10)</span></li>
+                      <li><a href="#">Office</a><span class="aantal">(19)</span></li>
+                      <li><a href="#">Outlook</a><span class="aantal">(1)</span></li>
+                      <li><a href="#">PowerPoint</a><span class="aantal">(2)</span></li>
+                      <li><a href="#">Project</a><span class="aantal">(4)</span></li>
+                      <li><a href="#">Visio</a><span class="aantal">(3)</span></li>
+                      <li><a href="#">Windows</a><span class="aantal">(3)</span></li>
+                      <li><a href="#">Word</a><span class="aantal">(7)</span></li>
+                      <li><a href="#">SharePoint</a><span class="aantal">(15)</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col--trainingen__gebruik__algemeen">
+                  <div class="trainingen__gebruik__algemeen">
+                    <h3>Algemeen</h3>
+                    <ul>
+                      <li><a href="#">Cisco</a><span class="aantal">(1)</span></li>
+                      <li><a href="#">ITIL / PRINCE</a><span class="aantal">(5)</span></li>
+                      <li><a href="#">iWriter</a><span class="aantal">(4)</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col--intro__usp--mobile">
+            <div class="intro__usp--mobile">
+              <div class="intro__usp">
+                <h2>Bij Master it Training leer je alleen wat je echt nodig hebt.</h2>
+                <ul>
+                  <li>Ervaren trainers met state-of-the-art kennis</li>
+                  <li>Kies zelf wanneer en waar je wilt trainen</li>
+                  <li>Geplande trainingen gaan altijd door</li>
+                </ul>
+              </div>
+              <div class="intro__links">
+                <ul>
+                  <li><a href="">Onze trainers</a></li>
+                  <li><a href="">Onze methode</a></li>
+                  <li><a href="">Erkenningen</a></li>
+                  <li><a href="">Referenties</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col--intro__links">
+            <div class="intro__links">
+              <ul>
+                <li><a href="">Onze trainers</a></li>
+                <li><a href="">Onze methode</a></li>
+                <li><a href="">Erkenningen</a></li>
+                <li><a href="">Referenties	</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer--footer">
+      <div class="container">
+        <div class="row">
+          <div class="col--footer">
+            <div class="footer">
+              <div class="foot__links">
+                <div class="quick-links">
+                  <h3 class="ft__header">Snel regelen</h3>
+                  <ul>
+                    <li class="ft__header">Snel regelen</li>
+                    <li><a href="#">Examen plannen</a></li>
+                    <li><a href="#">Adres trainingslocatie</a></li>
+                    <li><a href="#">Certificeringsposter aanvragen</a></li>
+                    <li><a href="#">Software Assurance Vouchers inleveren</a></li>
+                    <li><a href="#">Last minutes bekijken</a></li>
+                  </ul>
+                </div>
+                <div class="follow">
+                  <h3 class="ft__header">Volg Master it</h3>
+                  <ul>
+                    <li class="ft__header">Volg Master it</li>
+                    <li class="follow__newsletter-input">
+                      <div class="input-group input-group-sm">
+                        <input type="text" placeholder="Je emailadres..." class="form-control"><span class="input-group-btn">
+                          <button type="button" class="btn btn-primary">Inschrijven</button></span>
+                      </div>
+                    </li>
+                    <li class="follow__facebook"><a href="#"><i class="fa fa-facebook-square"> </i><span class="social--link-text">Facebook</span></a></li>
+                    <li class="follow__twitter"><a href="#"><i class="fa fa-twitter-square"> </i><span class="social--link-text">Twitter</span></a></li>
+                    <li class="follow__linkedin"><a href="#"><i class="fa fa-linkedin-square"> </i><span class="social--link-text">LinkedIn</span></a></li>
+                    <li class="follow__google-plus"><a href="#"><i class="fa fa-google-plus-square"> </i><span class="social--link-text">Google+</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="foot__small-print">
+                <ul>
+                  <li class="ft__info"><span class="copyright">Copyright Master it Training 2014 </span><span class="divider">- </span><span class="microsoft-partner">Microsoft Gold Partner</span></li>
+                  <li class="ft__link--sm"><a href="#">Privacy</a></li>
+                  <li class="ft__link--sm"><a href="#">Voorwaarden</a></li>
+                  <li class="ft__link--sm"><a href="#">Sitemap</a></li>
+                  <li class="ft__link--sm"><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap3-typeahead.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js">		</script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/locales/bootstrap-datepicker.nl.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      $('.nav__trainingen').addClass('active');
+      $('.js-datepicker').datepicker({
+      format: "dd/mm/yyyy",
+      weekStart: 1,
+      language: "nl",
+      multidate: 5,
+      todayHighlight: true
+      });		
+    </script>
+  </body>
+</html>

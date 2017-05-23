@@ -1,0 +1,161 @@
+extends default
+block header
+	- var pageTitle = 'Contact | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'contact';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li
+					a(href='#') Home
+				li.active Contact				
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1 Contact
+	+row('page-intro')
+		.col--intro__text
+			.intro__text
+				p Hier komt de introductietekst met SEO-optimized termen voor deze pagina. Conseratur autempe libus. Biscid utem fuga. Ilitiis eaquidio corum il ium quo molor maioratquis as pa non nonseque.
+	+row('kaart-en-gegevens')
+		.col--kaart-en-gegevens
+			.kaart-en-gegevens
+				.row
+					.col--google-maps
+						.contact__google-maps
+							img(src="http://placehold.it/460x320")
+					.col--adres-gegevens
+						.contact__adresgegevens
+							h3 Adres
+							ul.adres
+								li Master it Training
+								li Fellenoord 180
+								li 5611 ZB Eindhoven
+								li.bekijk-op-kaart: a(href='#') Bekijk op kaart			
+							ul.contact
+								li.telefoon: a(href='#') 040 23 23 390
+								li.chat: a(href='#') chat offline
+								li.email: a(href='#') info@master-it.nl
+								li.faq: a(href='#') Veelgestelde vragen
+					.col--in-page-nav
+						.in-page-nav--links
+							ul
+								li: a(href='#') Veelgestelde vragen
+					.col--social
+						.contact__social
+							h3 Volg Master it
+							ul
+								li.facebook: a(href='#') Facebook
+								li.twitter: a(href='#') Twitter
+								li.linkedin: a(href='#') LinkedIn
+								li.google-plus: a(href='#') Google+
+							h4 E-mail nieuwsbrief
+							.input-group.input-group-sm
+								input.form-control(type="text" placeholder="Je emailadres...")
+								span.input-group-btn
+									button.btn.btn-primary(type='button') Inschrijven
+	+row('snel-regelen')
+		.col--snel-regelen
+			.snel-regelen
+				.snel-regelen__header
+					h2 Snel regelen
+				.row
+					.col--snel-regelen__item
+						.snel-regelen__item
+							ul
+								li: a(href='#') Examen plannen
+					.col--snel-regelen__item									
+						.snel-regelen__item
+							ul
+								li: a(href='#') Certificeringsposter aanvragen
+					.col--snel-regelen__item								
+						.snel-regelen__item
+							ul
+								li: a(href='#') Software Assurance Vouchers inleveren
+					.col--snel-regelen__item								
+						.snel-regelen__item
+							ul
+								li: a(href='#') Last Minutes bekijken
+	+row('traininglocaties')
+		.col--traininglocaties
+			.traininglocaties
+				.traininglocaties__header
+					h2 Traininglocaties
+				.locaties__item
+					.thumb
+						img(src="http://placehold.it/440x244")
+						.bekijk-op-kaart: a(href='#') Bekijk op kaart
+					.text
+						h4 Master it Training
+						h3 Amsterdam
+						ul
+							li Gatwickstraat 33
+							li 1043 GL Amsterdam
+							li 030 75 19 737
+							li.empty &nbsp;
+						p
+							a.more-link(href='#') Informatie & route
+				.locaties__item
+					.thumb
+						img(src="http://placehold.it/440x244")
+						.bekijk-op-kaart: a(href='#') Bekijk op kaart
+					.text
+						h4 Master it Training
+						h3 Eindhoven
+						ul
+							li Fellenoord 180
+							li 5611 ZB Eindhoven
+							li 040 23 23 390
+							li.empty &nbsp;
+						p
+							a.more-link(href='#') Informatie & route
+				.locaties__item
+					.thumb
+						img(src="http://placehold.it/440x244")
+						.bekijk-op-kaart: a(href='#') Bekijk op kaart
+					.text
+						h4 Master it Training
+						h3 Rotterdam
+						ul
+							li Maastoren
+							li Wilhelminakade 1
+							li 3072 AP Rotterdam
+							li 010 29 06 900
+						p
+							a.more-link(href='#') Informatie & route
+				.locaties__item
+					.thumb
+						img(src="http://placehold.it/440x244")
+						.bekijk-op-kaart: a(href='#') Bekijk op kaart
+					.text
+						h4 Master it Training
+						h3 Utrecht
+						ul
+							li Stadion Galgenwaard
+							li Herculesplein 359
+							li 3584 AA Utrecht
+							li 030 75 19 737
+						p
+							a.more-link(href='#') Informatie & route								
+	+row('veelgestelde-vragen')
+		.col--veelgestelde-vragen
+			.veelgestelde-vragen
+				.veelgestelde-vragen__header
+					h2 Veelgestelde vragen
+				.row
+					.col--veelgestelde-vragen__body
+						.veelgestelde-vragen__body
+							.vgv__onderwerp
+								h3 Inschrijven
+								h4: a.collapsed(data-toggle="collapse" data-target="#faq1") Nitaspelis es velectem am ium explabor alit?
+								p#faq1.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.
+								h4: a.collapsed(data-toggle="collapse" data-target="#faq2") Trumquo stemped itassim possin conemol uptatin?
+								p#faq2.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.
+								h4: a.collapsed(data-toggle="collapse" data-target="#faq3") Dant sequi dolorib usapidi totatur?
+								p#faq3.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.
+							.vgv__onderwerp
+								h3 Studiemateriaal
+								h4: a.collapsed(data-toggle="collapse" data-target="#faq4") Cusapel eate erit id es sectem nesequae doluptae el ipsam?
+								p#faq4.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.
+								h4: a.collapsed(data-toggle="collapse" data-target="#faq5") Nitaspelis es velectem am ium explabor alit?
+								p#faq5.collapse Inti doluptatas comnimaximus seque endantias alia vendam audaepres sus  doloreprepe lita qui audaepudam aut ommodi beribuscid quatquis net lic tem  vendem con pe anditas dolut officitatium volut verum aut ea intusant, to tem  fuga. Puda volum vel ipiet que nonsed minum quodiae cullaborem ipsusda ndebit  etus molorernatia aliqui dem a dem ea debis doleseque volorru.

@@ -1,0 +1,180 @@
+extends default
+block header
+	- var pageTitle = 'Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'home';
+block content
+	.outer--home-intro--mobile
+		img(src="../img/BB_140616MASTER-4492-1200x675px.jpg")
+		.container
+			.row
+				.col--home-intro--mobile
+					.home-intro--mobile.slide__text-content
+						h2.slide__title Bij 
+							span Master it Training 
+							| leer je wat je echt nodig hebt.
+						p Een goede IT training zorgt ervoor dat mensen beter en efficienter kunnen werken. Wij bieden IT trainingen aan waarbij we gebruiken maken van een slimmere lesmethode, op 4 strategische locaties in Nederland en met de beste trainers. Succes gegarandeerd!
+						ul
+							li 
+								i.fa.fa-check
+								| Alleen leren wat je echt nodig hebt
+							li
+								i.fa.fa-check
+								| De beste gecertificeerde IT-trainers
+							li
+								i.fa.fa-check
+								| 100% doorgangsgarantie
+						.row--phone
+							.col--button-left
+								button(type="button") Trainingen
+							.col--button-right
+								button(type="button") Certificeringen					
+	include _carousel			
+	+row('aanbod')
+		.col--trainingen-certificeringen
+			.aanbod-overzicht.aanbod__train-cert
+				h2 Trainingen & certificeringen
+				.row
+					.col--aanbod__categorie
+						.train-cert__categorie
+							nav
+								select.form-control
+									option(value="#beheer--ms" data-toggle="tab") Microsoft beheer trainingen
+									option(value="#beheer" data-toggle="tab") Algemeen beheer trainingen
+									option(value="#development--ms" data-toggle="tab") Microsoft development trainingen
+									option(value="#development" data-toggle="tab") Algemeen development trainingen
+									option(value="#gebruik--ms" data-toggle="tab") Microsoft gebruik trainingen
+									option(value="#gebruik" data-toggle="tab") Algemeen gebruik trainingen
+									option(value="#certificeringen--ms" data-toggle="tab") Microsoft certificeringen
+									option(value="#certificeringen" data-toggle="tab") Algemeen certificeringen																
+								ul.train-cert__cat__list 
+									h3 Beheer trainingen
+									li.active: a(href="#beheer--ms" data-toggle="tab") Microsoft
+									li: a(href="#beheer" data-toggle="tab") Algemeen
+									h3 Development trainingen
+									li: a(href="#development--ms" data-toggle="tab") Microsoft
+									li: a(href="#development" data-toggle="tab") Algemeen
+									h3 Gebruik trainingen
+									li: a(href="#gebruik--ms" data-toggle="tab") Microsoft
+									li: a(href="#gebruik" data-toggle="tab") Algemeen
+									h3 Certificeringen
+									li: a(href="#certificeringen--ms" data-toggle="tab") Microsoft
+									li: a(href="#certificeringen" data-toggle="tab") Algemeen
+					.col--aanbod__product
+						.train-cert__product.tab-content
+							.tab-pane.active#beheer--ms
+								ul
+									li: a(href="#") BizTalk (2)
+									li: a(href="#") CertificeringsPas (27)
+									li: a(href="#") Exchange Server (15)
+									li
+										a(href="#") Forefront (4)
+										span Korting
+									li: a(href="#") Lync Server (9)
+									li: a(href="#") CRM (16)
+									li
+										a(href="#") Scripting (6)
+										span Nieuw
+									li: a(href="#") SharePoint (14)
+									li: a(href="#") SQL Server (40)
+									li: a(href="#") System Center (16)
+									li: a(href="#") Windows (18)
+									li: a(href="#") Windows Server (42)
+							.tab-pane#beheer
+								ul
+									li Beheer training Algemeen 1
+									li Beheer training Algemeen 2
+									li Beheer training Algemeen 3
+							.tab-pane#development--ms
+								ul
+									li Development training Microsoft 1
+									li Development training Microsoft 2
+									li Development training Microsoft 3
+							.tab-pane#development
+								ul
+									li Development training Algemeen 1
+									li Development training Algemeen 2
+									li Development training Algemeen 3
+							.tab-pane#gebruik--ms
+								ul
+									li Gebruik training Microsoft 1
+									li Gebruik training Microsoft 2
+									li Gebruik training Microsoft 3
+							.tab-pane#gebruik
+								ul
+									li Gebruik training Algemeen 1
+									li Gebruik training Algemeen 2
+									li Gebruik training Algemeen 3
+							.tab-pane#certificeringen--ms
+								ul
+									li Certificeringen Microsoft 1
+									li Certificeringen Microsoft 2
+									li Certificeringen Microsoft 3
+							.tab-pane#certificeringen
+								ul
+									li Certificeringen Algemeen 1
+									li Certificeringen Algemeen 2
+									li Certificeringen Algemeen 3																																				
+		.col--top-10
+			include _top-10
+	+row('autoriteit-en-nieuws')
+		.col--erkenningen-en-referenties
+			.erkenningen-en-referenties
+				h2 Erkenningen & referenties
+				.row
+					.col--erkenningen
+						.erkenningen
+							h3 Onze erkenningen
+							.logos
+								.row--phone
+									.col--logo
+										a.logo--microsoft(href="#") 
+											img(src="../img/Microsoft-Partner-Gold-Learning-1627x295px.png" alt="Microsoft Partner Gold Learning")
+									.col--logo
+										a.logo--citrix(href="#")
+											img(src="../img/Citrix-Partner-345x133px.png" alt="Citrix Partner")
+									.col--logo
+										a.logo--redhat(href="#")
+											img(src="../img/Redhat-Certified-Trainingpartner-1603x655px.png" alt="Redhat Certified Trainingpartner")
+									.col--logo
+										a.logo--prince2(href="#")
+											img(src="../img/Prince2-1419x261px.png" alt="Prince2")
+							a.more-link(href="#") Alle erkenningen
+								i.fa.fa-angle-double-right
+					.col--referenties
+						.referenties
+							h3 Wat onze klanten zeggen
+							include _springest-banner
+							a.more-link.more-link--extra(href="#") Alle erkenningen
+								i.fa.fa-angle-double-right							
+							a.more-link(href="#") Alle referenties
+								i.fa.fa-angle-double-right			
+		.col--home-nieuws
+			.home-nieuws
+				h2 Nieuws
+				.row
+					.col--home-nieuws__item.col--item01
+						.home-nieuws__item
+							img(src="../img/773339324_christian-weblog-html5-canvas-440x248px.jpg")
+							h3 HTML Canvas & Video trainingen
+							p Op de Microsoft Techdays heb ik 3 sessies verzorgd rondom HTML5 gerelateerde onderwerpen. De video registratie van deze sessie is inmiddels beschikbaar.
+							a.more-link(href="#") Lees verder
+								i.fa.fa-angle-double-right
+					.col--home-nieuws__item.col--item02
+						.home-nieuws__item
+							img(src="../img/Cloud_420589270-440x248px.jpg")
+							h3 Eigen Cloud of Cloud services huren?							
+							p Ja, het is zeer goed mogelijk dat men nu al werkt in de Cloud, maar waarom? De zogenaamde Cloud zorgt ervoor dat men zeer schaalbaar is.
+							a.more-link(href="#") Lees verder
+								i.fa.fa-angle-double-right
+					.col--home-nieuws__item.col--item03
+						.home-nieuws__item
+							img(src="../img/767832597_examenscore-304x171px.png")
+							h3 Hoe worden de scores berekend?							
+							p Onze trainers krijgen vaak bovenstaande vraag en wij kunnen niet anders dan bevestigen dat dit inderdaad vrij ingewikkeld is.
+							a.more-link(href="#") Lees verder
+								i.fa.fa-angle-double-right																				
+	+row('intro-tekst')
+		.col--intro-tekst
+			.intro-tekst Hier komt de introductietekst met SEO-optimized termen voor deze pagina. Conseratur autempe libus. Biscid utem fuga. Ilitiis eaquidio corum il ium quo molor maioratquis as pa non nonseque. Em ipsunt fugitiust vid eario. Hendige niminct inveles nus iligendiatis vollorem soloritatiam aut ma non pa nossum atio. Imolori onsendunt ut aut eatempo reressi magnient magni cum nim idel ipit ute seditas aspe volendae.
+block scripts
+	script(src="js/home.js")									

@@ -1,0 +1,136 @@
+include _mixins
+doctype html
+html(lang="en")
+	block header
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="")
+		meta(name="author" content="")
+		link(rel="shortcut icon" href="img/favicon.ico")
+		title #{pageTitle}
+		link(href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet")
+		link(rel="stylesheet" href="css/datepicker3.css")
+		link(rel="stylesheet" href="css/app.css")
+		link(rel="stylesheet" href="css/nieuws.css")
+		script(src="../bower_components/modernizr/modernizr.js")		
+		link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css")
+		script(src="https://use.typekit.net/xkp0gco.js")
+		script(type="text/javascript")
+			| try{Typekit.load({ async: true });}catch(e){}
+		<!--[if lt IE 9]>
+		script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+		script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+		<![endif]-->
+	body(class='#{bodyClass}')
+		.navbar.navbar-fixed-top.sticky-header
+			.container
+				.row
+					.col--sticky-header
+						.sticky__logo
+							a(href="/")
+								img(src="../img/Master-It-Logo-507x160px-WHITE-RED.png" alt="Master it Training")
+						nav.sticky__nav
+							ul.nav.navbar-nav
+								li.nav__home: a(href="/") Home
+								li.nav__trainingen.sticky__link: a(href="trainingen.html") Trainingen
+								li.nav__certificeringen: a(href="certificeringen.html") Certificeringen
+								li.nav__master-it: a(href="master-it.html") Master it
+								li.nav__nieuws: a(href="nieuws.html") Nieuws
+								li.nav__contact: a(href="contact.html") Contact																								
+						.sticky__icon
+							a.search(href="#"): i.fa.fa-search
+						.sticky__icon
+							a.cart(href="templates.html"): i.fa.fa-shopping-cart
+						.sticky__icon
+							a.cart(href="templates.html"): i.fa.fa-arrow-circle-o-up
+				.row									
+					.col--sticky__crumbs
+						ol.sticky__crumbs
+							li
+								a(href='#') Home
+							li
+								a(href='#') Sectie
+							li
+								a(href='#') Onderwerp
+							li.active Huidige pagina lorem ipsum
+		.outer--mobile-header.navbar-fixed-top
+			nav#offCanvasMenu.navmenu.navmenu-default.navmenu-inverse.navmenu-fixed-left.offcanvas(role='navigation')
+				ul.nav.navmenu-nav.off__main
+					li.nav__home: a(href="/") Home
+					li.nav__trainingen: a(href="trainingen.html") Trainingen
+					li.nav__certificeringen: a(href="certificeringen.html") Certificeringen
+					li.nav__master-it: a(href="master-it.html") Master it
+					li.nav__nieuws: a(href="nieuws.html") Nieuws
+					li.nav__contact: a(href="contact.html") Contact
+				ul.nav.navmenu-nav.off__contact
+					li.telefoon: a(href='#') 040 23 23 390
+					li.chat: a(href='#') chatten
+					li.email: a(href='mailto:info@masterit.nl') mailen
+				ul.nav.navmenu-nav.off__extra
+					li.english: a(href="#") English
+					li.login: a(href="login.html") Log in
+					li.cart: a(href="cart.html") Winkelmand (0)
+					li.zoek: a(href="#") Zoek
+			.container
+				.row
+					.col--mobile-menu-left
+						.mobile-menu__left
+							.row
+								.col--hamburger-icon
+									a.hamburger(data-toggle='offcanvas', data-target='#offCanvasMenu', data-canvas='body'): i.fa.fa-bars
+								.col--phone-icon
+									a.phone(href="tel:+31402323390"): i.fa.fa-phone
+					.col--brand
+						.hd__branding
+							h1.site-name Master it Training
+							.site-logo
+								a(href="/")
+									img.logo--white(src="../img/Master-It-Logo-507x160px-WHITE-RED.png" alt="Master it Training")
+					.col--mobile-menu-right
+						.mobile-menu__right
+							.row
+								.col--search-icon
+									a.search(href="#" data-toggle="collapse" data-target=".mobile-search-input"): i.fa.fa-search
+								.col--cart-icon
+									a.cart(href="templates.html"): i.fa.fa-shopping-cart
+				.row
+					.col--mobile-search-input
+						.mobile-search-input.collapse
+							.input-group
+								input.form-control#hd__search(type="text" placeholder="Zoek training, certificaat of informatie...")
+								span.input-group-btn
+									button.btn.btn-primary(type='button') Zoek									
+		+row('header')
+			include _header
+		+row('nav')
+			.col--main-nav
+				nav.main-nav
+					ul.nav.navbar-nav
+						li.nav__home: a(href="/") Home
+						li.nav__trainingen: a(href="trainingen.html") Trainingen
+						li.nav__certificeringen: a(href="certificeringen.html") Certificeringen
+						li.nav__master-it: a(href="master-it.html") Master it
+						li.nav__nieuws: a(href="nieuws.html") Nieuws
+						li.nav__contact: a(href="contact.html") Contact	
+		block content
+		+row('footer')
+			include _footer
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/bootstrap3-typeahead.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js")		
+		script(src="js/bootstrap-datepicker.js")
+		script(src="js/locales/bootstrap-datepicker.nl.js")
+		script(src="js/app.js")
+		script
+			| $('.nav__#{bodyClass}').addClass('active');
+			| $('.js-datepicker').datepicker({
+			| format: "dd/mm/yyyy",
+			| weekStart: 1,
+			| language: "nl",
+			| multidate: 5,
+			| todayHighlight: true
+			| });		
+		block scripts

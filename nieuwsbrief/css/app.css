@@ -1,0 +1,186 @@
+/* ! COLORS */
+/* ! MEDIA QUERIES */
+a {
+  color: #0067A6;
+  text-decoration: underline; }
+  a:hover, a:active, a:visited {
+    color: #005284 !important; }
+
+.text-centered {
+  text-align: center; }
+
+table.body {
+  margin-bottom: 30px; }
+
+.main-content {
+  border: 1px solid #eaf2f7; }
+
+td.wrapper--no-padding {
+  padding-top: 0;
+  padding-bottom: 0; }
+  td.wrapper--no-padding > table > tbody > tr > td {
+    padding-bottom: 0; }
+
+.header__left, .header__right {
+  width: 221px;
+  max-width: 221px; }
+
+.header__middle {
+  width: 137px; }
+
+.online-version-link .text-centered {
+  font-size: 12px;
+  line-height: 14px;
+  color: #808080; }
+
+table .columns td.main-content__cell {
+  padding-bottom: 0; }
+table .columns td.wrapper {
+  padding-bottom: 0; }
+table .columns td.blog-item {
+  padding-bottom: 16px; }
+  @media (max-width:599px) {
+    table .columns td.blog-item {
+      padding-bottom: 8px; } }
+table .columns td.padding-left-right {
+  padding-left: 32px;
+  padding-right: 32px; }
+  @media (max-width:599px) {
+    table .columns td.padding-left-right {
+      padding-left: 16px;
+      padding-right: 16px; } }
+table .columns td.button-container {
+  padding-bottom: 0; }
+table .columns td.adres__links, table .columns td.adres__rechts, table .columns td.text-link-container {
+  padding-top: 16px;
+  padding-bottom: 16px; }
+table .columns td.mail-subfooter {
+  padding-top: 20px; }
+table.button--wk {
+  border: none;
+  border-radius: 4px; }
+  table.button--wk td {
+    background-color: #ff6e03;
+    border: none;
+    padding: 12px 0; }
+    table.button--wk td a {
+      font-size: 22px;
+      font-weight: bold; }
+  table.button--wk:hover td {
+    background-color: #0e83c4 !important;
+    color: white; }
+
+.text-link {
+  text-decoration: underline; }
+
+.adres__links, .adres__rechts {
+  font-size: 12px;
+  background-color: #0e83c4;
+  color: white; }
+  .adres__links a, .adres__rechts a {
+    color: white; }
+    .adres__links a:hover, .adres__links a:visited, .adres__rechts a:hover, .adres__rechts a:visited {
+      color: #76c9f5 !important; }
+
+.adres__rechts {
+  text-align: right;
+  white-space: nowrap; }
+
+.footer .wrapper {
+  padding-bottom: 0; }
+
+.hero__image .wrapper {
+  padding-bottom: 0; }
+
+.bg--dark {
+  background-color: #0067A6; }
+  .bg--dark img {
+    float: none;
+    margin-left: auto;
+    margin-right: auto; }
+
+table.columns td.mail-header {
+  padding-top: 20px;
+  padding-bottom: 12px; }
+  table.columns td.mail-header img {
+    width: 200px;
+    height: 72px; }
+table.columns td.mail-date {
+  color: white; }
+table.columns td.mail-footer {
+  padding-top: 16px; }
+
+@media only screen and (max-width: 600px) {
+  table.online-version-link .columns, table.hero__date .columns {
+    display: table !important; } }
+
+.blog-item {
+  border-bottom: 1px solid #eaf2f7; }
+
+.blog-title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #0067A6;
+  margin-top: 22px;
+  margin-bottom: 12px; }
+  @media (max-width:599px) {
+    .blog-title {
+      margin-top: 16px; } }
+
+.blog-author {
+  font-size: 15px;
+  line-height: 1.1;
+  color: #999999;
+  margin-top: -6px;
+  margin-bottom: 12px; }
+
+.blog-image {
+  margin-right: 20px;
+  margin-bottom: 12px; }
+  @media (max-width:479px) {
+    .blog-image + p {
+      clear: both; } }
+
+.body__text p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 8px; }
+.body__text ul {
+  margin-top: 0; }
+
+.mail-footer {
+  padding-top: 12px;
+  background-color: #0067A6; }
+  .mail-footer p {
+    color: white;
+    text-align: center; }
+  .mail-footer a {
+    color: white; }
+    .mail-footer a:hover {
+      color: white !important;
+      text-decoration: underline; }
+
+.ft__bedrijfsnaam {
+  text-decoration: none;
+  font-weight: bold; }
+
+.ft__social {
+  line-height: 1.8;
+  margin-bottom: 4px; }
+  .ft__social .social-icon {
+    clear: none;
+    display: inline;
+    float: none;
+    vertical-align: text-bottom;
+    margin-right: 6px; }
+  .ft__social a {
+    text-decoration: none;
+    white-space: nowrap; }
+
+.mail-subfooter {
+  padding-top: 20px; }
+  .mail-subfooter p {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 6px; }

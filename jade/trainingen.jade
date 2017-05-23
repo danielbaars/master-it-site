@@ -1,0 +1,272 @@
+extends default
+block header
+	- var pageTitle = 'Trainingen | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'trainingen';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li: a(href='#') Home
+				li.active Trainingen				
+			ul.in-page-nav
+				li: a(href='#') Top 10
+				li: a(href='#') Beheer
+				li: a(href='#') Development
+				li: a(href='#') Gebruik
+	.outer--mobile-header-image
+		.mobile-header-image
+			img(src="../img/BB_140616MASTER-4396-1600x444px.jpg")			
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1 Trainingen
+	+row('page-intro')
+		.col--page-intro
+			.page-intro
+				.row
+					.col--intro__text
+						.intro__text
+							p Hier komt de introductietekst met SEO-optimized termen voor deze pagina. Conseratur autempe libus. Biscid utem fuga. Ilitiis eaquidio corum il ium quo molor maioratquis as pa non nonseque. Em ipsunt fugitiust vid eario. Hendige niminct inveles nus iligendiatis vollorem soloritatiam aut ma non pa nossum atio. Imolori onsendunt ut aut eatempo reressi magnient magni cum nim idel ipit ute seditas aspe volendae poritatem corum volorum endaes dit venimi.
+					.col--intro__usp
+						.intro__usp
+							h2 Bij Master it Training leer je alleen wat je echt nodig hebt.
+							ul
+								li Ervaren trainers met state-of-the-art kennis
+								li Kies zelf wanneer en waar je wilt trainen
+								li Geplande trainingen gaan altijd door
+						.intro__links
+							ul
+								li: a(href="") Onze trainers
+								li: a(href="") Onze methode
+								li: a(href="") Erkenningen
+								li: a(href="") Referenties
+					.col--intro__links
+						.intro__links
+							ul
+								li: a(href="") Onze trainers
+								li: a(href="") Onze methode
+								li: a(href="") Erkenningen
+								li: a(href="") Referenties
+	+row('top-10-en-beheer')
+		.col--trainingen__top-10
+			include _top-10
+		.col--trainingen__beheer
+			.trainingen__beheer
+				h2 Beheer
+				.row
+					.col--trainingen__beheer__microsoft
+						.trainingen__beheer__microsoft
+							h3 Microsoft
+							ul
+								li
+									a(href='#') BizTalk
+									span.aantal (2)
+								li
+									a(href='#') Exchange Server
+									span.aantal (15)
+								li
+									a(href='#') Forefront
+									span.aantal (4)
+								li
+									a(href='#') Lync Server
+									span.aantal (9)
+								li
+									a(href='#') CRM
+									span.aantal (16)
+								li
+									a(href='#') Scripting
+									span.aantal (6)
+								li
+									a(href='#') SharePoint
+									span.aantal (14)
+								li
+									a(href='#') SQL Server
+									span.aantal (40)
+								li
+									a(href='#') System Center
+									span.aantal (16)
+								li
+									a(href='#') Windows
+									span.aantal (18)
+								li
+									a(href='#') Windows Server
+									span.aantal (42)
+					.col--trainingen__beheer__algemeen
+						.trainingen__beheer__algemeen
+							h3 Algemeen
+							ul
+								li
+									a(href='#') Cisco
+									span.aantal (9)
+								li
+									a(href='#') Citrix
+									span.aantal (11)
+								li
+									a(href='#') Cloud Computing
+									span.aantal (20)
+								li
+									a(href='#') CompTIA
+									span.aantal (4)
+								li
+									a(href='#') Juniper
+									span.aantal (10)
+								li
+									a(href='#') Linux
+									span.aantal (6)
+								li
+									a(href='#') NetApp
+									span.aantal (6)
+								li
+									a(href='#') Oracle
+									span.aantal (16)
+								li
+									a(href='#') RES Software
+									span.aantal (5)
+								li
+									a(href='#') Security
+									span.aantal (7)
+								li
+									a(href='#') VMware
+									span.aantal (10)
+								li
+									a(href='#') Overig
+									span.aantal (12)
+	+row('development-en-gebruik')
+		.col--trainingen__development
+			.trainingen__development
+				h2 Development
+				.row
+					.col--trainingen__development__microsoft
+						.trainingen__development__microsoft
+							h3 Microsoft
+							ul
+								li
+									a(href='#') ASP.NET / ADO.NET
+									span.aantal (12)
+								li
+									a(href='#') BizTalk
+									span.aantal (2)
+								li
+									a(href='#') SharePoint
+									span.aantal (13)
+								li
+									a(href='#') SQL Server
+									span.aantal (15)
+								li
+									a(href='#') VBA (Microsoft Office)
+									span.aantal (4)
+								li
+									a(href='#') Visual Basic 6
+									span.aantal (1)
+								li
+									a(href='#') Visual Basic.NET
+									span.aantal (1)
+								li
+									a(href='#') Visual C#.NET
+									span.aantal (8)
+								li
+									a(href='#') Visual Studio
+									span.aantal (44)
+					.col--trainingen__development__algemeen
+						.trainingen__development__algemeen
+							h3 Algemeen
+							ul
+								li
+									a(href='#') C/C++
+									span.aantal (5)
+								li
+									a(href='#') HTML5
+									span.aantal (9)
+								li
+									a(href='#') Internet
+									span.aantal (3)
+								li
+									a(href='#') Java
+									span.aantal (10)
+								li
+									a(href='#') JavaScript
+									span.aantal (4)
+								li
+									a(href='#') Packaging / Installing
+									span.aantal (3)
+								li
+									a(href='#') XML
+									span.aantal (3)
+								li
+									a(href='#') Overig
+									span.aantal (10)
+		.col--trainingen__gebruik
+			.trainingen__gebruik
+				h2 Eindgebruik
+				.row
+					.col--trainingen__gebruik__microsoft
+						.trainingen__gebruik__microsoft
+							h3 Microsoft
+							ul
+								li
+									a(href='#') Access
+									span.aantal (3)
+								li
+									a(href='#') CRM
+									span.aantal (11)
+								li
+									a(href='#') Excel
+									span.aantal (10)
+								li
+									a(href='#') Office
+									span.aantal (19)
+								li
+									a(href='#') Outlook
+									span.aantal (1)
+								li
+									a(href='#') PowerPoint
+									span.aantal (2)
+								li
+									a(href='#') Project
+									span.aantal (4)
+								li
+									a(href='#') Visio
+									span.aantal (3)
+								li
+									a(href='#') Windows
+									span.aantal (3)
+								li
+									a(href='#') Word
+									span.aantal (7)
+								li
+									a(href='#') SharePoint
+									span.aantal (15)
+					.col--trainingen__gebruik__algemeen
+						.trainingen__gebruik__algemeen
+							h3 Algemeen
+							ul
+								li
+									a(href='#') Cisco
+									span.aantal (1)
+								li
+									a(href='#') ITIL / PRINCE
+									span.aantal (5)
+								li
+									a(href='#') iWriter
+									span.aantal (4)
+		.col--intro__usp--mobile
+			.intro__usp--mobile
+				.intro__usp
+					h2 Bij Master it Training leer je alleen wat je echt nodig hebt.
+					ul
+						li Ervaren trainers met state-of-the-art kennis
+						li Kies zelf wanneer en waar je wilt trainen
+						li Geplande trainingen gaan altijd door
+				.intro__links
+					ul
+						li: a(href="") Onze trainers
+						li: a(href="") Onze methode
+						li: a(href="") Erkenningen
+						li: a(href="") Referenties
+		.col--intro__links
+			.intro__links
+				ul
+					li: a(href="") Onze trainers
+					li: a(href="") Onze methode
+					li: a(href="") Erkenningen
+					li: a(href="") Referenties	

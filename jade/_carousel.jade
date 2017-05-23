@@ -1,0 +1,23 @@
+.outer--carousel
+	#carousel--home.carousel.slide(data-ride='carousel', data-interval='900000')
+		.carousel-inner
+			.item.active.slide--0
+				.slide-content
+					include _slide--waarom-master-it
+			.item.slide--1
+				.slide-content
+					include _slide--open-master-class
+			.item.slide--2
+				.slide-content
+					include _slide--certificeringspas
+			.item.slide--3
+				.slide-content
+					include _slide--onze-trainers
+		+row('carousel-nav')
+			.col--carousel-nav
+				.carousel-nav
+					ol.carousel-indicators.carousel-indicators--text
+						li.active(data-target='#carousel--home', data-slide-to='0') Waarom Master it
+						li(data-target='#carousel--home', data-slide-to='1') Open Master Class
+						li(data-target='#carousel--home', data-slide-to='2') De CertificeringsPas
+						li(data-target='#carousel--home', data-slide-to='3') Onze trainers

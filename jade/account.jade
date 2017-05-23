@@ -1,0 +1,66 @@
+extends default
+block header
+	- var pageTitle = 'Account | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'account';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			ol.breadcrumbs
+				li: a(href='#') Home
+				li.active Mijn account				
+	+row('page-header')
+		.col--page-header
+			.page-header
+				h1 Mijn account
+	+row('mijn-gegevens')
+		.col--mijn-gegevens
+			.mijn-gegevens
+				h2 Mijn gegevens
+				.mijn-gegevens-panel
+					.row
+						.col--mijn__contact
+							.mijn__contact
+								h3 Contactgegevens
+								p De heer Richard Broersma
+								p Flexible IT Solutions
+								p Blekerssingel 42
+								p 2807 DF Gouda
+								p 06 12345678
+								p r.broersma@flexible-it.nl
+						.col--mijn__factuuradres
+							.mijn__factuuradres
+								h3 Factuuradres
+								p Mevrouw Hanneke Wildschut - de Jong
+								p Flexible IT Solutions
+								p Golf van Biskaje 23
+								p 3446 XJ Woerden
+						.col--wijzig
+							button(type="button") Wijzig						
+	+row('mijn-trainingen-en-certificeringen')
+		.col--mijn-trainingen-en-certificeringen
+			.mijn-trainingen-en-certificeringen
+				h2 Mijn trainingen & certificeringen	
+				.block--training.block--mijn
+					h4.product-code MS20412
+					h3.product-titel Configuring Advanced Windows Server 2010 R2 Services
+					p.block__duur 5 dagen training
+					p.block__inschrijfdatum Ingeschreven 23-05-2014
+					ul.deelnemers
+						li Richard Broersma
+				.block--training.block--mijn
+					h4.product-code MS20413
+					h3.product-titel Designing and Implementing a Server Infrastructure
+					p.block__duur 5 dagen training
+					p.block__inschrijfdatum Ingeschreven 18-04-2014
+					ul.deelnemers
+						li Richard Broersma
+						li Jeanette Wieringa-de Jong
+						li Paul Verdonk						
+				.block--training.block--mijn
+					h4.product-code MS20414
+					h3.product-titel Implementing an Advanced Server Infrastructure
+					p.block__duur 1 jaar certificering
+					p.block__inschrijfdatum Ingeschreven 11-12-2013
+					ul.deelnemers
+						li Richard Broersma
+						li Bob Witteveen

@@ -1,0 +1,1 @@
+function goToSlide(number) { $("#carousel--home").carousel(number); }

@@ -1,0 +1,212 @@
+include _mixins
+doctype html
+html(lang="en")
+	block header
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="")
+		meta(name="author" content="")
+		link(rel="shortcut icon" href="img/favicon.ico")
+		title #{pageTitle}
+		link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css')
+		link(href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet")
+		link(rel="stylesheet" href="css/datepicker3.css")
+		link(rel="stylesheet" href="css/app.css")
+		link(rel="stylesheet" href="css/nieuws.css")
+		script(src="../bower_components/modernizr/modernizr.js")		
+		link(rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css")
+		script(type="text/javascript" src="//use.typekit.net/leh6owj.js")
+		script(type="text/javascript")
+			| try{Typekit.load();}catch(e){}
+		<!--[if lt IE 9]>
+		script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+		script(src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js")
+		<![endif]-->
+	body(class='content')
+		.navbar.navbar-fixed-top.sticky-header
+			.container
+				.row
+					.col--sticky-header
+						.sticky__logo
+							a(href="/")
+								img(src="../img/Master-It-Logo-507x160px-WHITE-RED.png" alt="Master it Training")
+						nav.sticky__nav
+							ul.nav.navbar-nav
+								li.nav__home: a(href="/") Home
+								li.nav__trainingen: a(href="trainingen.html") Trainingen
+								li.nav__certificeringen: a(href="certificeringen.html") Certificeringen
+								li.nav__master-it: a(href="master-it.html") Master it
+								li.nav__nieuws: a(href="nieuws.html") Nieuws
+								li.nav__contact: a(href="contact.html") Contact																								
+						.sticky__icon
+							a.search(href="#"): i.fa.fa-search
+						.sticky__icon
+							a.cart(href="templates.html"): i.fa.fa-shopping-cart
+						.sticky__icon
+							a.cart(href="templates.html"): i.fa.fa-arrow-circle-o-up
+				.row									
+					.col--sticky__crumbs
+						ol.sticky__crumbs
+							li
+								a(href='#') Home
+							li
+								a(href='#') Sectie
+							li
+								a(href='#') Onderwerp
+							li.active Huidige pagina lorem ipsum
+		+row('header')
+			include _header
+		+row('nav')
+			.col--main-nav
+				nav.main-nav
+					ul.nav.navbar-nav
+						li.nav__home: a(href="/") Home
+						li.nav__trainingen: a(href="trainingen.html") Trainingen
+						li.nav__certificeringen: a(href="certificeringen.html") Certificeringen
+						li.nav__master-it: a(href="master-it.html") Master it
+						li.nav__nieuws: a(href="nieuws.html") Nieuws
+						li.nav__contact: a(href="contact.html") Contact	
+		block content
+			+row('breadcrumbs')
+				.col--breadcrumbs
+					ol.breadcrumbs
+						li
+							a(href='#') Home
+						li
+							a(href='#') Sectie
+						li
+							a(href='#') Onderwerp
+						li.active Huidige pagina lorem ipsum
+			+row('middle')
+				.col--main-content
+					.main-content
+						.page-header
+							h1 Huidige pagina lorem ipsum
+							h2 Optionele subtitel quibus everi alibusaectur senimusda quuntem
+							.content__meta
+								ul
+									li.nieuws__datum 23-04-2014
+									li.nieuws__read-count 123 keer gelezen
+						.content__body
+							p.content__intro Introductie lorem ipsum dolor aque voluptatisti cus. Otatem rerumquas eat. Cones secus aut essundit et ut lam re pore saeraera simodio poreperia conse cuptae dolora volum quis ute con nullicia. Dignis as acient alignatis rehendis que dendist iaerspelit dolupta.
+							.img-container: img(src='http://placehold.it/620x374')
+							p Tekst aque voluptatisti cus. Otatem rerumquas eat. Cones secus aut essundit et ut lam re pore saeraera simodio magnia dolliquiae volor aut citibus tibuscit ere.
+							p Otatem rerumquas eat. Cones secus aut essundit et ut lam re pore volutem uttamos saeraera simodio magnia dolliquiae volor aut citibus tibuscit lorem ipsum.
+							hr
+							h3 Tussenkop volupture
+							p Nullici andam, consequi comnima ximaxim commolu ptatus sequam, rem utecea doluptati quam que et imet ut magnisti oditaquibus dolorup tatat re nem inline link vetgedrukte tekst cursieve tekst sequo ipidigentis lorem ipsum dolor.
+							ul
+								li  Sed ut aut et, ut aut aborem volore rerumet quas rereiciet quiandit
+								li  Parcien debit, ut earumenihil il est ut facilis sus nis dolupta 
+							ol
+								li  Quasper citemped quo ma autat idellupti volupta con lorem ipsum dolor virum
+								li  Illaccaectur am, qui re num quiditatet occatem intempo reriossit 
+							hr
+							.img-container.img-container--half: img(src='http://placehold.it/620x374')
+							h3 Tussenkop volutem intempo
+							p Ide et esequiam volorio autpat velit can rendeles quo bersperum aut parcien quo veribus estione culland sed ut aut pore aeperum, cus eni omnihitin magnia dolli re consectibus volutem ut mod tibuscit quam sit aut quossimus nam otatem citem quasit earum harcillut liquo dolupta vel qumasi cus et rereiciet quiandit reriossit quatet pre pre, sunt evel.
+							hr
+							h3 Tussenkop andit occus dolorrume dolupta 
+							p Otatem rerumquas eat. Cones secus aut essundit et ut lam re pore volutem uttamos saeraera simodio magnia dolliquiae volor aut citibus tibuscit lorem ipsum.
+							.content__table
+								table
+									thead
+										tr
+											th &nbsp;
+											th Kolom 1
+											th Kolom 2
+									tbody
+										tr
+											td Rij 1 otatern eat
+											td € 123
+											td Waarde 1 quam sit
+										tr
+											td Rij 2 saeraera simodio
+											td € 456
+											td Waarde 2 liquo
+										tr
+											td Rij 3 volor aut
+											td € 789
+											td Waarde 3 bersperum
+						.content__footer
+							ul
+								li.share-facebook: a(href="#")
+									span.share-text Vind ik leuk
+								li.share-twitter: a(href="#")
+									span.share-text Tweeten
+								li.share-linkedin: a(href="#")
+									span.share-text Delen
+								li.share-email: a(href="#")
+									span.share-text Deel via e-mail																								
+				.col--sidebar
+					.sidebar
+						.content__auteur
+							.img-container
+								img(src='http://placehold.it/300x300')
+							h2 Jos van Vegchel
+							h3 Master it Trainer o.a. Microsoft CRM
+							ul
+								li
+									a(href='#') Artikelen van Jos
+								li
+									a(href='#') Onze trainers						
+						.sidebar__over
+							h2 Over Master it Training
+							.intro__usp--sidebar
+								h3 Bij Master it Training leer je alleen wat je echt nodig hebt.
+								ul.usp-list
+									li Ervaren trainers met state-of-the-art kennis
+									li Kies zelf wanneer en waar je wilt trainen
+									li Geplande trainingen gaan altijd door
+								.button.button--trainingen: a(href='#') Trainingen
+								.button.button--certificeringen: a(href='#') Certificeringen		
+								.intro__links--sidebar
+									ul
+										li: a(href="#") Onze trainers
+										li: a(href="#") Erkenningen
+										li: a(href="#") Onze methode
+										li: a(href="#") Referenties
+						.content__gerelateerd
+							h2 Gerelateerde trainingen
+							ul
+								li
+									span.product-code MS6292 
+									a(href='#') Installing and Configuring  Windows 7 Client
+								li
+									span.product-code MS10774 
+									a(href='#') Querying Microsoft SQL Server  2012
+								li
+									span.product-code MS10266 
+									a(href='#') Programming with C# using  Microsoft .NET Framework 4
+						.content__meest-gelezen
+							h2 Meest gelezen
+							ol
+								li
+									a(href='#') //Build/ Dag 2: Azure en .Net framework
+								li
+									a(href='#') Examentraining
+								li
+									a(href='#') Help, CRM 2013 van Microsoft Dynamics  ziet er anders uit dan normaal
+								li
+									a(href='#') Eigen Cloud of Cloud services huren?
+								li
+									a(href='#') Canvas & Video		
+		+row('footer')
+			include _footer
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js")		
+		script(src="js/bootstrap-datepicker.js")
+		script(src="js/locales/bootstrap-datepicker.nl.js")
+		script
+			| $('.nav__#{bodyClass}').addClass('active');
+			| $('.js-datepicker').datepicker({
+			| format: "dd/mm/yyyy",
+			| weekStart: 1,
+			| language: "nl",
+			| multidate: 5,
+			| todayHighlight: true
+			| });		
+		block scripts

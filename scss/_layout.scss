@@ -1,0 +1,635 @@
+%column {
+	position: relative;
+	float: left;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row--phone {
+	@media #{$phone-only} {
+		@include make-row;
+	}
+}
+
+[class*='col--'] {
+	@include phone-col(12);
+}
+
+/* MOBILE HEADER */
+
+.col--mobile-menu-left,
+.col--mobile-menu-right {
+	display: block;
+	@extend %column;
+	width: 30%;
+	@media #{$tablet} {
+		display: none;
+	}
+}
+
+	.col--hamburger-icon,
+	.col--phone-icon,
+	.col--search-icon,
+	.col--cart-icon {
+		@include phone-col(6);
+		@include phablet-col(6);
+	}
+	
+	.col--hamburger-icon,
+	.col--search-icon {
+		padding-right: 10px;
+	}
+	
+	.col--phone-icon,
+	.col--cart-icon {
+		padding-left: 10px;
+		text-align: right;
+	}
+	
+
+/* HEADER */
+
+.col--brand {
+	display: block;
+	@extend %column;
+	width: 40%;
+	padding-left: 10px;
+	padding-right: 10px;
+	@media #{$tablet} {
+		@extend %column;
+		width: 28%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	@include desktop-col(3);
+}
+
+.col--search-contact {
+	display: none;
+	@media #{$tablet} {
+		display: block;
+		@extend %column;
+		width: 53%;
+	}
+	@include desktop-col(6);
+	
+}
+
+.col--shopping-cart {
+	display: none;
+	@media #{$tablet} {
+		display: block;
+		@extend %column;
+		width: 19%;
+	}
+	@include desktop-col(3);
+}
+
+/* HEADER: Contact details & search */
+
+.col--hd__search {
+	@include phone-col(12);
+}
+
+
+/* NAVIGATION */
+
+.col--main-nav {
+	display: none;
+	@include tablet-col(12);
+}
+
+
+/* CAROUSEL */
+
+.col--carousel {
+	@include phone-col(12);
+}
+
+.col--carousel-nav {
+	display: none;
+	@include tablet-col(12);
+}
+
+.col--slide-text-content {
+	@include phone-col(12);
+	@include tablet-col(8);
+	@include desktop-col(6);
+}
+
+	.col--button-left,
+	.col--button-right {
+		display: inline;
+		float: none;
+		padding: 0;
+	}
+	
+
+/* Slide buttons on phone */
+
+@media #{$phone-only} {
+
+	.col--button-left,
+	.col--button-right {
+		@include phone-col(6);
+	}
+	
+	.col--button-left {
+		width: 45%;
+		padding-right: 8px;
+	}
+	
+	.col--button-right {
+		width: 55%;
+		padding-left: 8px;
+	}
+	
+}
+
+/* HOME CONTENT */
+
+.col--trainingen-certificeringen {
+	@include phone-col(12);
+	@include tablet-col(8);
+	@include desktop-col(6);
+	@include desktop-wide-col(5);
+}
+
+	.col--aanbod__categorie,
+	.col--aanbod__product {
+		@include phone-col(12);
+		@include phablet-col(6);
+	}
+
+.col--top-10 {
+	display: none;
+	@include tablet-col(4);
+	@include desktop-col(6);
+	@include desktop-wide-col(7);
+}
+
+.col--erkenningen-en-referenties {
+	@include phone-col(12);
+	@include tablet-col(8);
+	@include desktop-col(6);
+	@include desktop-wide-col(5);
+}
+
+	.col--erkenningen {
+		@include phone-col(12);
+		@include phablet-col(6);
+	}
+	
+/* Erkenningen logos on phone */
+
+@media #{$phone-only} {
+	.col--logo {
+		@include phone-col(6);
+	}
+}	
+	.col--referenties {
+		@include phone-col(12);
+		@include phablet-col(6);
+	}
+
+.col--intro-tekst {
+	@include phone-col(12);
+}
+
+/* Home nieuws */
+
+.col--home-nieuws {
+	@include phone-col(12);
+	@include tablet-col(4);
+	@include desktop-col(6);
+	@include desktop-wide-col(7);
+}
+
+	.col--item01 {
+		@include phone-col(12);
+		@include phablet-col(6);
+		@include tablet-col(12);
+		@include desktop-col(6);
+		@include desktop-wide-col(4);
+	}
+	
+	.col--item02 {
+		display: none;
+		@include phablet-col(6);
+		@media #{$tablet} {
+			display: none;
+		}
+		@include desktop-col(6);
+		@include desktop-wide-col(4);
+	}
+	
+	.col--item03 {
+		display: none;
+		@include desktop-wide-col(4);
+	}	
+
+
+/* FOOTER */
+
+
+/* ! PAGES */
+
+.col--breadcrumbs {
+	display: none;
+	@include tablet-col(12);
+}
+
+
+
+.col--intro__text {
+	@include phone-col(12);
+	@include tablet-col(7);
+	@include desktop-col(6);
+}
+
+.col--intro__usp,
+.col--intro__foto {
+	@include tablet-col(5);
+	@include desktop-col(6);
+}
+
+.col--in-page-nav {
+	@include tablet-col(5);	
+	@include desktop-col(6);
+}
+
+.col--intro__links {
+	display: none;
+}
+
+/* !  CERTIFICERINGEN */
+
+.col--cert-cat__info {
+	@include tablet-col(4);
+}
+
+.col--cert-cat__products {
+	@include tablet-col(8);
+}
+
+	
+/* ! TRAININGEN */
+
+.col--trainingen__top-10 {
+	display: none;
+}
+
+.col--trainingen__top-10,
+.col--trainingen__beheer,
+.col--trainingen__development,
+.col--trainingen__gebruik {
+	@include tablet-small-col(6);	
+}
+
+	.trainingen,
+	.trainingen-lijst,
+	.certificeringen {
+		.col--intro__usp {
+			display: none;
+			@media #{$tablet} {
+				display: block;
+			}
+		}
+		.col--intro__usp--mobile {
+			@media #{$tablet} {
+				display: none;
+			}			
+		}
+	}
+
+
+	.col--trainingen__beheer__microsoft,
+	.col--trainingen__beheer__algemeen,
+	.col--trainingen__development__microsoft,
+	.col--trainingen__development__algemeen,
+	.col--trainingen__gebruik__microsoft,
+	.col--trainingen__gebruik__algemeen {
+		@include phone-col(6);
+	
+	}
+	
+
+
+/* ! TRAINING DETAIL */
+
+
+
+.col--kiezen-en-datepicker {
+	@include desktop-col(6);
+}
+
+.col--training-info-en-links {
+	@include desktop-col(6);
+}
+
+	.col--plan-en-kies {
+		@include tablet-small-col(4);
+		@include tablet-col(3);
+		@include desktop-col(4);
+	}
+	
+		.col--plan,
+		.col--kies {
+			@include phone-col(6);
+			@include tablet-small-col(12);
+		}
+
+	.col--datepicker {
+		@include tablet-small-col(8);
+		@include tablet-col(5);
+		@include desktop-col(8);
+	}
+	
+	.kalender-inschrijf-blok {
+	
+		.col--form__left {
+			@include tablet-small-col(6);
+			@include tablet-col(5);
+			@include desktop-col(7);
+			@include desktop-wide-col(6);
+		}
+		
+		.col--form__right {
+			@include tablet-small-col(6);
+			@include tablet-col(3);
+			@include desktop-col(5);
+			@include desktop-wide-col(6);
+		}	
+		
+		.col--form__right--offset {
+			@include tablet-col(9);
+			@include tablet-col-offset(3);
+			@include desktop-col(5);
+			@include desktop-col-offset(7);
+		}
+	
+	}
+		
+	.col--tr-info__data-en-korting,
+	.col--tr-info__select-en-button {
+		@include tablet-col(6);
+	}
+
+	.col--over-training__body,
+	.col--over-certificering__body {
+		@include tablet-col(8);
+		@include desktop-col(9);
+		@include desktop-wide-col(8);
+	}
+	
+	.col--over-training__promo,
+	.col--over-certificering__promo {
+		display: none;
+		@include tablet-col(4);
+		@include desktop-col(3);
+		@include desktop-wide-col(4);
+	}
+
+
+
+/* ! CERTIFICERING DETAIL */
+
+
+.col--pas-kiezen {
+	@include tablet-col(7);
+}
+	
+.col--certificering-info-en-links {
+	@include tablet-col(5);
+}	
+
+	.col--stap__info,
+	.col--stap__trainingen,
+	.col--stap__examen {
+		@include tablet-small-col(4);
+	}	
+
+.col--panel__right {
+	@include tablet-col(6);
+	@include tablet-col-offset(6);
+}
+	
+/* ! INSCHRIJVEN */	
+
+@media #{$mobile-view-only} {
+
+	.row--formulier-en-samenvatting {
+		@include boxit(vertical);
+	}
+	
+	.col--samenvatting {
+		@include order(2);
+	}
+	
+	.col--formulier {
+		@include order(1);
+	}
+
+}
+
+	.col--formulier {
+		@include tablet-col(12);
+		@include desktop-col(8);
+		@include desktop-col-pull(4);
+	}
+	
+		.col--form__left {
+			@include tablet-col(3);
+		}
+		
+		.col--form__right {
+			@include tablet-col(9);
+		}	
+		
+		.col--form__right--offset {
+			@include tablet-col(9);
+			@include tablet-col-offset(3);
+		}				
+	
+	.col--samenvatting {
+		@include tablet-col(12);
+		@include desktop-col(4);
+		@include desktop-col-push(8);
+	}
+
+/* ! BEVESTIGING */
+
+	.col--aanvullende-vragen__body {
+		@include phone-col(12);
+		@include tablet-col(9);
+		@include desktop-col(8);
+		@include desktop-wide-col(7);
+	}
+	
+	.bevestiging {
+	
+		.col--intro__text {
+			@include desktop-wide-col(7);
+		}
+		
+		.col--intro__foto {
+			@include desktop-wide-col(5);
+		}	
+	
+		.col--form__left {
+			@include tablet-col(4);
+		}
+		
+		.col--form__right {
+			@include tablet-col(8);
+		}	
+		
+		.col--form__right--offset {
+			@include tablet-col(8);
+			@include tablet-col-offset(4);
+		}	
+		
+	}
+	
+/* ! MASTER IT TRAINING */
+
+.col--in-cijfers__item {
+	@include phablet-col(6);
+	@include tablet-col(4);
+	@include desktop-col(3);
+}
+
+.col--onze__item {
+	@include phone-col(6);
+	@include tablet-small-col(4);
+	@include tablet-col(3);
+}
+	
+
+	.col--locaties__item {
+		@include tablet-col(3);
+	}
+	.col--beste__body {
+		@include tablet-col(6);
+	}
+	
+	.master-it {
+		.col--erkenningen,
+		.col--referenties {
+			@include tablet-col(3);
+		}
+	}
+	
+
+/* ! NIEUWS */
+
+	.col--onderwerp-filter,
+	.col--empty {
+		@include tablet-col(3);
+	}
+	
+	.col--nieuws-items,
+	.col--nieuws-footer-button {
+		@include tablet-col(9);
+	}
+	
+		.col--nieuws-items-1,
+		.col--nieuws-items-2 {
+			@include tablet-col(6);
+			@include desktop-col(4);
+			@include desktop-wide-col(3);
+		}
+		
+		.col--nieuws-items-3 {
+			display: none;
+			@include desktop-col(4);
+			@include desktop-wide-col(3);
+		}		
+		
+		.col--nieuws-items-4 {
+			display: none;
+			@include desktop-wide-col(3);
+		}
+		
+
+
+/* ! CONTACT */
+
+.contact {
+	.col--intro__text {
+		@include tablet-col(8);
+		@include desktop-col(6);
+	}
+	.col--in-page-nav {
+		@media #{$tablet-small} {
+			display: none;
+		}
+	}
+}
+	.col--google-maps {
+		display: none;
+		@include tablet-small-col(8);
+		@include tablet-col(8);
+		@include desktop-col(6);
+	}
+	
+	.col--adres-gegevens {
+		@include tablet-small-col(4);
+		@include tablet-col(4);
+		@include desktop-col(3);
+	}
+	
+	.col--social {
+		display: none;
+		@include desktop-col(3);
+	}
+	
+.col--snel-regelen__item {
+	@include desktop-col(3);
+}	
+	
+.col--veelgestelde-vragen {
+	@include tablet-small-col(9);
+}	
+
+
+/* ! CONTENT */
+
+.col--main-content {
+	@include tablet-col(8);
+}
+
+.col--sidebar {
+	@include tablet-col(4);
+}
+	
+	.col--sidebar__left,
+	.col--sidebar__right {
+		@include tablet-col(6);
+	}
+	
+/* ! ACCOUNT */
+
+.col--mijn-gegevens {
+	@include tablet-small-col(12);
+	@include desktop-col(9);
+	@include desktop-wide-col(7);
+}
+
+	.col--mijn__contact,
+	.col--mijn__factuuradres {
+		@include tablet-small-col(6);
+	}	
+	
+/* ! ZOEK */
+
+.col--zoek__informatie {
+	@include desktop-col(8);
+}	
+	
+/* ! TEMPLATES */
+
+.col--templates {
+	@include phone-col(12);
+}

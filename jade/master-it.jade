@@ -1,0 +1,191 @@
+extends default
+block header
+	- var pageTitle = 'Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = 'master-it';
+block content
+	+row('breadcrumbs')
+		.col--breadcrumbs
+			.breadcrumbs-in-page-nav
+				ol.breadcrumbs
+					li Home
+					li.active
+						a(href='#') Master it
+				ul.in-page-nav
+					li: a(href='#') Open masterclass
+					li: a(href='#') Certificeringspas
+					li: a(href='#') Trainers & management
+					li: a(href='#') Erkenningen
+					li: a(href='#') Referenties
+					li: a(href='#') Vacatures				
+	.outer--page-header
+		.container
+			.row
+				.col--page-header
+					.page-header
+						.custom-select
+							select.form-control
+								option(value='' selected) Kies onderwerp:
+								option(value='') Open masterclass
+								option(value='') Certificeringspas
+								option(value='') Trainers & management
+								option(value='') Erkenningen
+								option(value='') Referenties
+								option(value='') Vacatures							
+						h1 Master it Training
+						h2 Leer alleen wat je echt nodig hebt
+				.col--intro__text
+					.intro__text
+						p Master it Training verzorgt sinds 1999 trainingen en opleidingen op het gebied van systeem- en netwerkbeheer, software development en 
+										span.hide-on-mobile kantoorautomatisering. Met ruim 650 verschillende titels, beschikken wij over een breed en gevarieerd aanbod en kunnen wij invulling geven aan vrijwel iedere IT opleidingsvraag vanuit zowel het bedrijfsleven als de overheid.
+					.intro__links
+						ul
+							li
+								a(href='#') Onze methode: open masterclass
+							li
+								a(href='#') Onze trainers & management
+							li
+								a(href='#') Onze trainingslocaties
+				.col--intro__foto
+					.intro__foto
+						img(src="img/BB_140616MASTER-4883-1200x675px.jpg")
+	+row('in-cijfers')
+		.col--in-cijfers
+			.in-cijfers
+				.in-cijfers__header
+					h2 Master it Training in cijfers
+				.row
+					.col--in-cijfers__item
+						.in-cijfers__item
+							h3 650
+							p verschillende trainingen voor beheer,  development en gebruik
+							ul
+								li: a(href='#') Trainingen
+								li: a(href='#') Certificeringen
+					.col--in-cijfers__item									
+						.in-cijfers__item
+							h3 27.372
+							p tevreden cursisten sinds de oprichting in 1999
+							ul
+								li: a(href='#') Opgericht in 1999
+					.col--in-cijfers__item								
+						.in-cijfers__item
+							h3 8
+							p deelnemers maximaal in onze unieke open masterclass
+							ul
+								li: a(href='#') Onze methode
+					.col--in-cijfers__item								
+						.in-cijfers__item
+							h3 4
+							p trainingslocaties op goed bereikbare plaatsen
+							ul
+								li: a(href='#') Trainingslocaties
+	+row('beste-it-opleider')
+		.col--beste-it-opleider
+			.beste-it-opleider
+				.beste-it-opleider__header
+					h2 De beste IT-opleider
+				.row
+					.col--beste__body
+						.beste__body
+							p Informatie over kernwaarden en doelstellingen quunt od que perfere mperepuda nia sim dus nonse doluptat eati veritatem volut modit, nobitio berum voluptiis es eos eatusam inusandae 
+								span.hide-on-mobile velendi illest, qui aut et liquo dus ab ipsam ent intorepernam simenit evel magnatem eossitiores ex escium faceritae ipis asimet int et, quunt exerum iunt eictur.
+							p 
+								span.hide-on-mobile Asinvel idit utem fugitatis et ipis et audio voluptum enis eos sumquas sitatur aruntiur maximet inullit, alitasp ellant inctius danderia volumquae veribus sime nonescit volendae persped modisse et autatem quiatur, cuptatium qui quas eaquo et aligent iundent laborro ipidunto millabore pero isimus volores simaionsed quae.
+							p
+								a.more-link(href='#') Lees verder
+					.col--erkenningen
+						.erkenningen
+							h3 Onze erkenningen
+							.logos
+								.row--phone
+									.col--logo
+										a.logo--microsoft(href="#") 
+											img(src="../img/Microsoft-Partner-Gold-Learning-1627x295px.png" alt="Microsoft Partner Gold Learning")
+									.col--logo
+										a.logo--citrix(href="#")
+											img(src="../img/Citrix-Partner-345x133px.png" alt="Citrix Partner")
+									.col--logo
+										a.logo--redhat(href="#")
+											img(src="../img/Redhat-Certified-Trainingpartner-1603x655px.png" alt="Redhat Certified Trainingpartner")
+									.col--logo
+										a.logo--prince2(href="#")
+											img(src="../img/Prince2-1419x261px.png" alt="Prince2")
+							a.more-link(href="#") Alle erkenningen
+					.col--referenties
+						.referenties
+							h3 Wat onze klanten zeggen
+							include _springest-banner
+							a.more-link.more-link--extra(href="#") Alle erkenningen
+								i.fa.fa-angle-double-right							
+							a.more-link(href="#") Alle referenties
+								i.fa.fa-angle-double-right
+	+row('onze-trainers-en-management')
+		.col--onze-trainers-en-management
+			.onze-trainers-en-management
+				.onze-trainers-en-management__header
+					h2 Onze trainers en management
+				.row
+					.col--onze__item
+						.onze__item
+							img(src="http://placehold.it/320x240")
+							h3 Jasper Voorhoeve
+							h4 Directeur en oprichter
+							ul
+								li.linkedin
+									a(href="#")
+										i.fa.fa-linkedin-square 
+										span.social--link-text LinkedIn
+								li.email
+									a(href="#")
+										i.fa.fa-envelope 
+										span.social--link-text Email										
+					.col--onze__item									
+						.onze__item
+							img(src="http://placehold.it/320x240")
+							h3 Jos van Vegchel
+							h4 Trainer o.a. Microsoft CRM
+							ul
+								li.linkedin
+									a(href="#")
+										i.fa.fa-linkedin-square 
+										span.social--link-text LinkedIn
+								li.email
+									a(href="#")
+										i.fa.fa-envelope 
+										span.social--link-text Email							
+					.col--onze__item								
+						.onze__item
+							img(src="http://placehold.it/320x240")
+							h3 Judith van der Ven
+							h4 Marketing & communications
+							ul
+								li.linkedin
+									a(href="#")
+										i.fa.fa-linkedin-square 
+										span.social--link-text LinkedIn
+								li.email
+									a(href="#")
+										i.fa.fa-envelope 
+										span.social--link-text Email							
+					.col--onze__item								
+						.onze__item
+							img(src="http://placehold.it/320x240")
+							h3 Christian Peeters
+							h4 Trainer .net en SQL Server
+							ul
+								li.linkedin
+									a(href="#")
+										i.fa.fa-linkedin-square 
+										span.social--link-text LinkedIn
+								li.email
+									a(href="#")
+										i.fa.fa-envelope 
+										span.social--link-text Email
+				.onze-trainers-en-management__footer
+					a.more-link(href='#') Bekijk trainers & management
+	+row('onze-klanten')
+		.col--onze-klanten
+			.onze-klanten
+				.onze-klanten__header
+					h2 Onze klanten
+					img(src="../img/klanten-logos-1140x217px.png")

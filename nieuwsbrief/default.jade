@@ -1,0 +1,20 @@
+doctype strict
+html(xmlns="http://www.w3.org/1999/xhtml")
+	block header
+	head
+		meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+		meta(name="viewport" content="width=device-width")
+		title #{baseTitle}
+		style
+			include ink.css
+			include css/app.css
+	body
+		table.body
+			tr
+				td.center(align="center" valign="top")
+					center
+							table.container
+								tbody
+									tr
+										td
+											block content

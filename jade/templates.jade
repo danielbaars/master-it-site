@@ -1,0 +1,26 @@
+extends default
+block header
+	- var pageTitle = 'Templates | Master it Training - 650 IT trainingen en cursussen';
+	- var bodyClass = '';
+block content			
+	+row('templates')
+		.col--templates
+			.templates
+				h1 Templates
+				ol
+					li: a(href="index.html") Home
+					li: a(href="trainingen.html") Trainingen
+					li: a(href="trainingen-lijst.html") Trainingen lijst
+					li: a(href="training-detail.html") Training detail
+					li: a(href="certificeringen.html") Certificeringen
+					li: a(href="certificering-detail.html") Certificering detail
+					li: a(href="inschrijven.html") Inschrijven
+					li: a(href="bevestiging.html") Bevestiging
+					li: a(href="master-it.html") Master it
+					li: a(href="nieuws.html") Nieuws
+					li: a(href="contact.html") Contact
+					li: a(href="account.html") Account
+					li: a(href="content.html") Content
+					li: a(href="zoek.html") Zoek
+					li: a(href="nieuwsbrief/index.html") E-mail nieuwsbrief
+					
